@@ -1861,58 +1861,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Created By:
-
-
-    Brent Spector - Lead Game Designer
-
-    Damien Robbs - Lead Programmer
-
-
-    Audio:
-
-    All audio by Kevin MacLeod, obtained from http://incompetech.com/music/royalty-free/collections.php
-
-    Menu - "Americana"
-
-    Desert Map - "Lord of the Land"
-
-    Snow Map - "Bumba Crossing"
-
-    Metropolis Map - "Destiny Day"
-
-    European Map - "Heroic Age"
-
-    Victory - "The Curtain Rises"
-
-    Draw - "Evening Melodrama"
-
-    Loss - "Hero Down"
-
-
-    Art:
-
-    Desert Battle Background - Created by VectorOpenStock.com. Obtained from http://www.freevector.com/desert-vector-art/
-
-
-    European Battle Background - Created by VectorOpenStock.com and freevector. Meadow
-    obtained from http://www.freevector.com/sunny-field/ and Sky Design obtained from
-    http://www.vecteezy.com/vector-art/73689-insect-with-flowers
-
-
-    Metropolis Battle Background - Created by Options-Connect. Obtained from http://all-free-download.com/free-vector/download/sunrise_background_vector_40676.html
-
-
-    Snow Battle Background - Created by dapino-colada.nl. Obtained from http://www.freevector.com/winter-landscape-vector/
-
-
-    Armor - Created by Clint Bellanger, Blarumyrran, crowline (CrowLineStudio), and
-    Justin Nichol.
-
-    Obtained from http://opengameart.org/content/armor-icons-by-equipment-slot
-
-
-    Weapons - Mod/Created by VWolfdog. Obtained from http://opengameart.org/content/32x32-icons-flare-compatible'
+  m_Text: "Created By:\n\nBrent Spector - Lead Game Designer\nDamien Robbs - Lead
+    Programmer\n\nAudio:\nAll audio by Kevin MacLeod, obtained from http://incompetech.com/music/royalty-free/collections.php\nMenu
+    - \"Americana\"\nDesert Map - \"Lord of the Land\"\nSnow Map - \"Bumba Crossing\"\nMetropolis
+    Map - \"Destiny Day\"\nEuropean Map - \"Heroic Age\"\nVictory - \"The Curtain
+    Rises\"\nDraw - \"Evening Melodrama\"\nLoss - \"Hero Down\"\n\nArt:\nDesert Battle
+    Background - Created by VectorOpenStock.com. Obtained from http://www.freevector.com/desert-vector-art/\n\nEuropean
+    Battle Background - Created by VectorOpenStock.com and freevector. Meadow obtained
+    from http://www.freevector.com/sunny-field/ and Sky Design obtained from http://www.vecteezy.com/vector-art/73689-insect-with-flowers\n\nMetropolis
+    Battle Background - Created by Options-Connect. Obtained from http://all-free-download.com/free-vector/download/sunrise_background_vector_40676.html\n\nSnow
+    Battle Background - Created by dapino-colada.nl. Obtained from http://www.freevector.com/winter-landscape-vector/\n\nMarket
+    Merchant - Created by LiDou. Obtained from http://www.freevector.com/patriarch/
+    \n\nArmor - Created by Clint Bellanger, Blarumyrran, crowline (CrowLineStudio),
+    and Justin Nichol.\nObtained from http://opengameart.org/content/armor-icons-by-equipment-slot\n\nWeapons
+    - Mod/Created by VWolfdog. Obtained from http://opengameart.org/content/32x32-icons-flare-compatible"
 --- !u!222 &470385193
 CanvasRenderer:
   m_ObjectHideFlags: 0
