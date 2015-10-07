@@ -149,7 +149,7 @@ namespace GSP.Entities.Neutrals
         public void SetCharacterSprites(int playerNumber)
         {
             // A temporary Sprite array; Make sure the playerNumber is within the proper range of one to MaxPlayers
-            Sprite[] tmp = UnityEngine.Resources.LoadAll<Sprite>("player" + Utility.ClampInt(playerNumber, 1, GameMaster.Instance.MaxPlayers));
+            Sprite[] tmp = UnityEngine.Resources.LoadAll<Sprite>("player" + Utility.ClampInt(playerNumber, 1, 8));
 
             // Add the idle sprites for each direction
             charSprites.Add(tmp[1]);

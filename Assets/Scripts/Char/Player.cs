@@ -248,6 +248,7 @@ namespace GSP.Char
         } // end SetCharacterSprites
 
         // Faces the merchant in a given direction; This changes the merchant's sprite to match this
+		//TODO: This is depreciated. All uses have been moved to animator controllers.
         public void Face(FacingDirection facingDirection)
         {
             merchant.Face(facingDirection);

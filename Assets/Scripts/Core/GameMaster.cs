@@ -52,6 +52,7 @@ namespace GSP.Core
         // The variables here are through dictionaries; The key is the player number
         Dictionary<int, string> playerNames;            // The list of the players' names
         Dictionary<int, InterfaceColors> playerColors;  // The list of the players' colours
+		Dictionary<int, int> playerSprite;				// The list of the players' sprites
         Dictionary<int, GameObject> playerObjs;         // The list of players' GameObject's
         Dictionary<int, Char.Player> players;           // The list of players' Player scripts references
 
@@ -70,6 +71,7 @@ namespace GSP.Core
             // Create the dictionaries
             playerNames = new Dictionary<int, string>();
             playerColors = new Dictionary<int, InterfaceColors>();
+			playerSprite = new Dictionary<int, int> ();
             playerObjs = new Dictionary<int, GameObject>();
             players = new Dictionary<int, Char.Player>();
 
@@ -92,6 +94,7 @@ namespace GSP.Core
             {
                 playerNames.Add(index, string.Empty);
                 playerColors.Add(index, InterfaceColors.Black);
+				playerSprite.Add(index, -1);
                 playerObjs.Add(index, null);
                 players.Add(index, null);
             } // end for
@@ -187,6 +190,24 @@ namespace GSP.Core
             playerColors[playerNum] = playerColor;
         } // end SetPlayerColor
 
+		// Gets the player's sprite with the given key
+		public int GetPlayerSprite(int playerNum)
+		{
+			return playerSprite [playerNum];
+		} //end GetPlayerSprite
+
+		// Sets the player's sprite with the given key
+		public void SetPlayerSprite(int playerNum, int pSprite)
+		{
+			playerSprite [playerNum] = pSprite;
+		} //end SetPlayerSprite
+
+		// Gets the player's GameObject's animator - not settable outside SetPlayerSprite
+		public Animator GetPlayerAnimator(int playerNum)
+		{
+			return playerObjs [playerNum].GetComponent<Animator> ();
+		} //end GetPlayerAnimator
+
         // Gets the player's GameObject
         public GameObject GetPlayerObject(int playerNum)
         {
@@ -263,6 +284,13 @@ namespace GSP.Core
 
             // Set the colour for the player
             Instance.SetPlayerColor(playerNum, (InterfaceColors)randColor);
+
+			// Get a random sprite
+			int randSprite = die.Roll (1, 8);
+			Debug.Log (randSprite);
+
+			// Set the sprite for the player
+			Instance.SetPlayerSprite (playerNum, randSprite);
         } // end GiveRandomNameAndColor
 
         // Create new players
