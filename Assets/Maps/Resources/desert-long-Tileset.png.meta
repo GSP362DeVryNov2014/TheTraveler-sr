@@ -1,0 +1,4510 @@
+fileFormatVersion: 2
+guid: c5448c1f23f714940bffbe77be8bf36e
+timeCreated: 1443568498
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: desert-long-Tileset_0
+    21300002: desert-long-Tileset_1
+    21300004: desert-long-Tileset_2
+    21300006: desert-long-Tileset_3
+    21300008: desert-long-Tileset_4
+    21300010: desert-long-Tileset_5
+    21300012: desert-long-Tileset_6
+    21300014: desert-long-Tileset_7
+    21300016: desert-long-Tileset_8
+    21300018: desert-long-Tileset_9
+    21300020: desert-long-Tileset_10
+    21300022: desert-long-Tileset_11
+    21300024: desert-long-Tileset_12
+    21300026: desert-long-Tileset_13
+    21300028: desert-long-Tileset_14
+    21300030: desert-long-Tileset_15
+    21300032: desert-long-Tileset_16
+    21300034: desert-long-Tileset_17
+    21300036: desert-long-Tileset_18
+    21300038: desert-long-Tileset_19
+    21300040: desert-long-Tileset_20
+    21300042: desert-long-Tileset_21
+    21300044: desert-long-Tileset_22
+    21300046: desert-long-Tileset_23
+    21300048: desert-long-Tileset_24
+    21300050: desert-long-Tileset_25
+    21300052: desert-long-Tileset_26
+    21300054: desert-long-Tileset_27
+    21300056: desert-long-Tileset_28
+    21300058: desert-long-Tileset_29
+    21300060: desert-long-Tileset_30
+    21300062: desert-long-Tileset_31
+    21300064: desert-long-Tileset_32
+    21300066: desert-long-Tileset_33
+    21300068: desert-long-Tileset_34
+    21300070: desert-long-Tileset_35
+    21300072: desert-long-Tileset_36
+    21300074: desert-long-Tileset_37
+    21300076: desert-long-Tileset_38
+    21300078: desert-long-Tileset_39
+    21300080: desert-long-Tileset_40
+    21300082: desert-long-Tileset_41
+    21300084: desert-long-Tileset_42
+    21300086: desert-long-Tileset_43
+    21300088: desert-long-Tileset_44
+    21300090: desert-long-Tileset_45
+    21300092: desert-long-Tileset_46
+    21300094: desert-long-Tileset_47
+    21300096: desert-long-Tileset_48
+    21300098: desert-long-Tileset_49
+    21300100: desert-long-Tileset_50
+    21300102: desert-long-Tileset_51
+    21300104: desert-long-Tileset_52
+    21300106: desert-long-Tileset_53
+    21300108: desert-long-Tileset_54
+    21300110: desert-long-Tileset_55
+    21300112: desert-long-Tileset_56
+    21300114: desert-long-Tileset_57
+    21300116: desert-long-Tileset_58
+    21300118: desert-long-Tileset_59
+    21300120: desert-long-Tileset_60
+    21300122: desert-long-Tileset_61
+    21300124: desert-long-Tileset_62
+    21300126: desert-long-Tileset_63
+    21300128: desert-long-Tileset_64
+    21300130: desert-long-Tileset_65
+    21300132: desert-long-Tileset_66
+    21300134: desert-long-Tileset_67
+    21300136: desert-long-Tileset_68
+    21300138: desert-long-Tileset_69
+    21300140: desert-long-Tileset_70
+    21300142: desert-long-Tileset_71
+    21300144: desert-long-Tileset_72
+    21300146: desert-long-Tileset_73
+    21300148: desert-long-Tileset_74
+    21300150: desert-long-Tileset_75
+    21300152: desert-long-Tileset_76
+    21300154: desert-long-Tileset_77
+    21300156: desert-long-Tileset_78
+    21300158: desert-long-Tileset_79
+    21300160: desert-long-Tileset_80
+    21300162: desert-long-Tileset_81
+    21300164: desert-long-Tileset_82
+    21300166: desert-long-Tileset_83
+    21300168: desert-long-Tileset_84
+    21300170: desert-long-Tileset_85
+    21300172: desert-long-Tileset_86
+    21300174: desert-long-Tileset_87
+    21300176: desert-long-Tileset_88
+    21300178: desert-long-Tileset_89
+    21300180: desert-long-Tileset_90
+    21300182: desert-long-Tileset_91
+    21300184: desert-long-Tileset_92
+    21300186: desert-long-Tileset_93
+    21300188: desert-long-Tileset_94
+    21300190: desert-long-Tileset_95
+    21300192: desert-long-Tileset_96
+    21300194: desert-long-Tileset_97
+    21300196: desert-long-Tileset_98
+    21300198: desert-long-Tileset_99
+    21300200: desert-long-Tileset_100
+    21300202: desert-long-Tileset_101
+    21300204: desert-long-Tileset_102
+    21300206: desert-long-Tileset_103
+    21300208: desert-long-Tileset_104
+    21300210: desert-long-Tileset_105
+    21300212: desert-long-Tileset_106
+    21300214: desert-long-Tileset_107
+    21300216: desert-long-Tileset_108
+    21300218: desert-long-Tileset_109
+    21300220: desert-long-Tileset_110
+    21300222: desert-long-Tileset_111
+    21300224: desert-long-Tileset_112
+    21300226: desert-long-Tileset_113
+    21300228: desert-long-Tileset_114
+    21300230: desert-long-Tileset_115
+    21300232: desert-long-Tileset_116
+    21300234: desert-long-Tileset_117
+    21300236: desert-long-Tileset_118
+    21300238: desert-long-Tileset_119
+    21300240: desert-long-Tileset_120
+    21300242: desert-long-Tileset_121
+    21300244: desert-long-Tileset_122
+    21300246: desert-long-Tileset_123
+    21300248: desert-long-Tileset_124
+    21300250: desert-long-Tileset_125
+    21300252: desert-long-Tileset_126
+    21300254: desert-long-Tileset_127
+    21300256: desert-long-Tileset_128
+    21300258: desert-long-Tileset_129
+    21300260: desert-long-Tileset_130
+    21300262: desert-long-Tileset_131
+    21300264: desert-long-Tileset_132
+    21300266: desert-long-Tileset_133
+    21300268: desert-long-Tileset_134
+    21300270: desert-long-Tileset_135
+    21300272: desert-long-Tileset_136
+    21300274: desert-long-Tileset_137
+    21300276: desert-long-Tileset_138
+    21300278: desert-long-Tileset_139
+    21300280: desert-long-Tileset_140
+    21300282: desert-long-Tileset_141
+    21300284: desert-long-Tileset_142
+    21300286: desert-long-Tileset_143
+    21300288: desert-long-Tileset_144
+    21300290: desert-long-Tileset_145
+    21300292: desert-long-Tileset_146
+    21300294: desert-long-Tileset_147
+    21300296: desert-long-Tileset_148
+    21300298: desert-long-Tileset_149
+    21300300: desert-long-Tileset_150
+    21300302: desert-long-Tileset_151
+    21300304: desert-long-Tileset_152
+    21300306: desert-long-Tileset_153
+    21300308: desert-long-Tileset_154
+    21300310: desert-long-Tileset_155
+    21300312: desert-long-Tileset_156
+    21300314: desert-long-Tileset_157
+    21300316: desert-long-Tileset_158
+    21300318: desert-long-Tileset_159
+    21300320: desert-long-Tileset_160
+    21300322: desert-long-Tileset_161
+    21300324: desert-long-Tileset_162
+    21300326: desert-long-Tileset_163
+    21300328: desert-long-Tileset_164
+    21300330: desert-long-Tileset_165
+    21300332: desert-long-Tileset_166
+    21300334: desert-long-Tileset_167
+    21300336: desert-long-Tileset_168
+    21300338: desert-long-Tileset_169
+    21300340: desert-long-Tileset_170
+    21300342: desert-long-Tileset_171
+    21300344: desert-long-Tileset_172
+    21300346: desert-long-Tileset_173
+    21300348: desert-long-Tileset_174
+    21300350: desert-long-Tileset_175
+    21300352: desert-long-Tileset_176
+    21300354: desert-long-Tileset_177
+    21300356: desert-long-Tileset_178
+    21300358: desert-long-Tileset_179
+    21300360: desert-long-Tileset_180
+    21300362: desert-long-Tileset_181
+    21300364: desert-long-Tileset_182
+    21300366: desert-long-Tileset_183
+    21300368: desert-long-Tileset_184
+    21300370: desert-long-Tileset_185
+    21300372: desert-long-Tileset_186
+    21300374: desert-long-Tileset_187
+    21300376: desert-long-Tileset_188
+    21300378: desert-long-Tileset_189
+    21300380: desert-long-Tileset_190
+    21300382: desert-long-Tileset_191
+    21300384: desert-long-Tileset_192
+    21300386: desert-long-Tileset_193
+    21300388: desert-long-Tileset_194
+    21300390: desert-long-Tileset_195
+    21300392: desert-long-Tileset_196
+    21300394: desert-long-Tileset_197
+    21300396: desert-long-Tileset_198
+    21300398: desert-long-Tileset_199
+    21300400: desert-long-Tileset_200
+    21300402: desert-long-Tileset_201
+    21300404: desert-long-Tileset_202
+    21300406: desert-long-Tileset_203
+    21300408: desert-long-Tileset_204
+    21300410: desert-long-Tileset_205
+    21300412: desert-long-Tileset_206
+    21300414: desert-long-Tileset_207
+    21300416: desert-long-Tileset_208
+    21300418: desert-long-Tileset_209
+    21300420: desert-long-Tileset_210
+    21300422: desert-long-Tileset_211
+    21300424: desert-long-Tileset_212
+    21300426: desert-long-Tileset_213
+    21300428: desert-long-Tileset_214
+    21300430: desert-long-Tileset_215
+    21300432: desert-long-Tileset_216
+    21300434: desert-long-Tileset_217
+    21300436: desert-long-Tileset_218
+    21300438: desert-long-Tileset_219
+    21300440: desert-long-Tileset_220
+    21300442: desert-long-Tileset_221
+    21300444: desert-long-Tileset_222
+    21300446: desert-long-Tileset_223
+    21300448: desert-long-Tileset_224
+    21300450: desert-long-Tileset_225
+    21300452: desert-long-Tileset_226
+    21300454: desert-long-Tileset_227
+    21300456: desert-long-Tileset_228
+    21300458: desert-long-Tileset_229
+    21300460: desert-long-Tileset_230
+    21300462: desert-long-Tileset_231
+    21300464: desert-long-Tileset_232
+    21300466: desert-long-Tileset_233
+    21300468: desert-long-Tileset_234
+    21300470: desert-long-Tileset_235
+    21300472: desert-long-Tileset_236
+    21300474: desert-long-Tileset_237
+    21300476: desert-long-Tileset_238
+    21300478: desert-long-Tileset_239
+    21300480: desert-long-Tileset_240
+    21300482: desert-long-Tileset_241
+    21300484: desert-long-Tileset_242
+    21300486: desert-long-Tileset_243
+    21300488: desert-long-Tileset_244
+    21300490: desert-long-Tileset_245
+    21300492: desert-long-Tileset_246
+    21300494: desert-long-Tileset_247
+    21300496: desert-long-Tileset_248
+    21300498: desert-long-Tileset_249
+    21300500: desert-long-Tileset_250
+    21300502: desert-long-Tileset_251
+    21300504: desert-long-Tileset_252
+    21300506: desert-long-Tileset_253
+    21300508: desert-long-Tileset_254
+    21300510: desert-long-Tileset_255
+    21300512: desert-long-Tileset_256
+    21300514: desert-long-Tileset_257
+    21300516: desert-long-Tileset_258
+    21300518: desert-long-Tileset_259
+    21300520: desert-long-Tileset_260
+    21300522: desert-long-Tileset_261
+    21300524: desert-long-Tileset_262
+    21300526: desert-long-Tileset_263
+    21300528: desert-long-Tileset_264
+    21300530: desert-long-Tileset_265
+    21300532: desert-long-Tileset_266
+    21300534: desert-long-Tileset_267
+    21300536: desert-long-Tileset_268
+    21300538: desert-long-Tileset_269
+    21300540: desert-long-Tileset_270
+    21300542: desert-long-Tileset_271
+    21300544: desert-long-Tileset_272
+    21300546: desert-long-Tileset_273
+    21300548: desert-long-Tileset_274
+    21300550: desert-long-Tileset_275
+    21300552: desert-long-Tileset_276
+    21300554: desert-long-Tileset_277
+    21300556: desert-long-Tileset_278
+    21300558: desert-long-Tileset_279
+    21300560: desert-long-Tileset_280
+    21300562: desert-long-Tileset_281
+    21300564: desert-long-Tileset_282
+    21300566: desert-long-Tileset_283
+    21300568: desert-long-Tileset_284
+    21300570: desert-long-Tileset_285
+    21300572: desert-long-Tileset_286
+    21300574: desert-long-Tileset_287
+    21300576: desert-long-Tileset_288
+    21300578: desert-long-Tileset_289
+    21300580: desert-long-Tileset_290
+    21300582: desert-long-Tileset_291
+    21300584: desert-long-Tileset_292
+    21300586: desert-long-Tileset_293
+    21300588: desert-long-Tileset_294
+    21300590: desert-long-Tileset_295
+    21300592: desert-long-Tileset_296
+    21300594: desert-long-Tileset_297
+    21300596: desert-long-Tileset_298
+    21300598: desert-long-Tileset_299
+    21300600: desert-long-Tileset_300
+    21300602: desert-long-Tileset_301
+    21300604: desert-long-Tileset_302
+    21300606: desert-long-Tileset_303
+    21300608: desert-long-Tileset_304
+    21300610: desert-long-Tileset_305
+    21300612: desert-long-Tileset_306
+    21300614: desert-long-Tileset_307
+    21300616: desert-long-Tileset_308
+    21300618: desert-long-Tileset_309
+    21300620: desert-long-Tileset_310
+    21300622: desert-long-Tileset_311
+    21300624: desert-long-Tileset_312
+    21300626: desert-long-Tileset_313
+    21300628: desert-long-Tileset_314
+    21300630: desert-long-Tileset_315
+    21300632: desert-long-Tileset_316
+    21300634: desert-long-Tileset_317
+    21300636: desert-long-Tileset_318
+    21300638: desert-long-Tileset_319
+    21300640: desert-long-Tileset_320
+    21300642: desert-long-Tileset_321
+    21300644: desert-long-Tileset_322
+    21300646: desert-long-Tileset_323
+    21300648: desert-long-Tileset_324
+    21300650: desert-long-Tileset_325
+    21300652: desert-long-Tileset_326
+    21300654: desert-long-Tileset_327
+    21300656: desert-long-Tileset_328
+    21300658: desert-long-Tileset_329
+    21300660: desert-long-Tileset_330
+    21300662: desert-long-Tileset_331
+    21300664: desert-long-Tileset_332
+    21300666: desert-long-Tileset_333
+    21300668: desert-long-Tileset_334
+    21300670: desert-long-Tileset_335
+    21300672: desert-long-Tileset_336
+    21300674: desert-long-Tileset_337
+    21300676: desert-long-Tileset_338
+    21300678: desert-long-Tileset_339
+    21300680: desert-long-Tileset_340
+    21300682: desert-long-Tileset_341
+    21300684: desert-long-Tileset_342
+    21300686: desert-long-Tileset_343
+    21300688: desert-long-Tileset_344
+    21300690: desert-long-Tileset_345
+    21300692: desert-long-Tileset_346
+    21300694: desert-long-Tileset_347
+    21300696: desert-long-Tileset_348
+    21300698: desert-long-Tileset_349
+    21300700: desert-long-Tileset_350
+    21300702: desert-long-Tileset_351
+    21300704: desert-long-Tileset_352
+    21300706: desert-long-Tileset_353
+    21300708: desert-long-Tileset_354
+    21300710: desert-long-Tileset_355
+    21300712: desert-long-Tileset_356
+    21300714: desert-long-Tileset_357
+    21300716: desert-long-Tileset_358
+    21300718: desert-long-Tileset_359
+    21300720: desert-long-Tileset_360
+    21300722: desert-long-Tileset_361
+    21300724: desert-long-Tileset_362
+    21300726: desert-long-Tileset_363
+    21300728: desert-long-Tileset_364
+    21300730: desert-long-Tileset_365
+    21300732: desert-long-Tileset_366
+    21300734: desert-long-Tileset_367
+    21300736: desert-long-Tileset_368
+    21300738: desert-long-Tileset_369
+    21300740: desert-long-Tileset_370
+    21300742: desert-long-Tileset_371
+    21300744: desert-long-Tileset_372
+    21300746: desert-long-Tileset_373
+    21300748: desert-long-Tileset_374
+    21300750: desert-long-Tileset_375
+    21300752: desert-long-Tileset_376
+    21300754: desert-long-Tileset_377
+    21300756: desert-long-Tileset_378
+    21300758: desert-long-Tileset_379
+    21300760: desert-long-Tileset_380
+    21300762: desert-long-Tileset_381
+    21300764: desert-long-Tileset_382
+    21300766: desert-long-Tileset_383
+    21300768: desert-long-Tileset_384
+    21300770: desert-long-Tileset_385
+    21300772: desert-long-Tileset_386
+    21300774: desert-long-Tileset_387
+    21300776: desert-long-Tileset_388
+    21300778: desert-long-Tileset_389
+    21300780: desert-long-Tileset_390
+    21300782: desert-long-Tileset_391
+    21300784: desert-long-Tileset_392
+    21300786: desert-long-Tileset_393
+    21300788: desert-long-Tileset_394
+    21300790: desert-long-Tileset_395
+    21300792: desert-long-Tileset_396
+    21300794: desert-long-Tileset_397
+    21300796: desert-long-Tileset_398
+    21300798: desert-long-Tileset_399
+    21300800: desert-long-Tileset_400
+    21300802: desert-long-Tileset_401
+    21300804: desert-long-Tileset_402
+    21300806: desert-long-Tileset_403
+    21300808: desert-long-Tileset_404
+    21300810: desert-long-Tileset_405
+    21300812: desert-long-Tileset_406
+    21300814: desert-long-Tileset_407
+    21300816: desert-long-Tileset_408
+    21300818: desert-long-Tileset_409
+    21300820: desert-long-Tileset_410
+    21300822: desert-long-Tileset_411
+    21300824: desert-long-Tileset_412
+    21300826: desert-long-Tileset_413
+    21300828: desert-long-Tileset_414
+    21300830: desert-long-Tileset_415
+    21300832: desert-long-Tileset_416
+    21300834: desert-long-Tileset_417
+    21300836: desert-long-Tileset_418
+    21300838: desert-long-Tileset_419
+    21300840: desert-long-Tileset_420
+    21300842: desert-long-Tileset_421
+    21300844: desert-long-Tileset_422
+    21300846: desert-long-Tileset_423
+    21300848: desert-long-Tileset_424
+    21300850: desert-long-Tileset_425
+    21300852: desert-long-Tileset_426
+    21300854: desert-long-Tileset_427
+    21300856: desert-long-Tileset_428
+    21300858: desert-long-Tileset_429
+    21300860: desert-long-Tileset_430
+    21300862: desert-long-Tileset_431
+    21300864: desert-long-Tileset_432
+    21300866: desert-long-Tileset_433
+    21300868: desert-long-Tileset_434
+    21300870: desert-long-Tileset_435
+    21300872: desert-long-Tileset_436
+    21300874: desert-long-Tileset_437
+    21300876: desert-long-Tileset_438
+    21300878: desert-long-Tileset_439
+    21300880: desert-long-Tileset_440
+    21300882: desert-long-Tileset_441
+    21300884: desert-long-Tileset_442
+    21300886: desert-long-Tileset_443
+    21300888: desert-long-Tileset_444
+    21300890: desert-long-Tileset_445
+    21300892: desert-long-Tileset_446
+    21300894: desert-long-Tileset_447
+    21300896: desert-long-Tileset_448
+    21300898: desert-long-Tileset_449
+    21300900: desert-long-Tileset_450
+    21300902: desert-long-Tileset_451
+    21300904: desert-long-Tileset_452
+    21300906: desert-long-Tileset_453
+    21300908: desert-long-Tileset_454
+    21300910: desert-long-Tileset_455
+    21300912: desert-long-Tileset_456
+    21300914: desert-long-Tileset_457
+    21300916: desert-long-Tileset_458
+    21300918: desert-long-Tileset_459
+    21300920: desert-long-Tileset_460
+    21300922: desert-long-Tileset_461
+    21300924: desert-long-Tileset_462
+    21300926: desert-long-Tileset_463
+    21300928: desert-long-Tileset_464
+    21300930: desert-long-Tileset_465
+    21300932: desert-long-Tileset_466
+    21300934: desert-long-Tileset_467
+    21300936: desert-long-Tileset_468
+    21300938: desert-long-Tileset_469
+    21300940: desert-long-Tileset_470
+    21300942: desert-long-Tileset_471
+    21300944: desert-long-Tileset_472
+    21300946: desert-long-Tileset_473
+    21300948: desert-long-Tileset_474
+    21300950: desert-long-Tileset_475
+    21300952: desert-long-Tileset_476
+    21300954: desert-long-Tileset_477
+    21300956: desert-long-Tileset_478
+    21300958: desert-long-Tileset_479
+    21300960: desert-long-Tileset_480
+    21300962: desert-long-Tileset_481
+    21300964: desert-long-Tileset_482
+    21300966: desert-long-Tileset_483
+    21300968: desert-long-Tileset_484
+    21300970: desert-long-Tileset_485
+    21300972: desert-long-Tileset_486
+    21300974: desert-long-Tileset_487
+    21300976: desert-long-Tileset_488
+    21300978: desert-long-Tileset_489
+    21300980: desert-long-Tileset_490
+    21300982: desert-long-Tileset_491
+    21300984: desert-long-Tileset_492
+    21300986: desert-long-Tileset_493
+    21300988: desert-long-Tileset_494
+    21300990: desert-long-Tileset_495
+    21300992: desert-long-Tileset_496
+    21300994: desert-long-Tileset_497
+    21300996: desert-long-Tileset_498
+    21300998: desert-long-Tileset_499
+    21301000: desert-long-Tileset_500
+    21301002: desert-long-Tileset_501
+    21301004: desert-long-Tileset_502
+    21301006: desert-long-Tileset_503
+    21301008: desert-long-Tileset_504
+    21301010: desert-long-Tileset_505
+    21301012: desert-long-Tileset_506
+    21301014: desert-long-Tileset_507
+    21301016: desert-long-Tileset_508
+    21301018: desert-long-Tileset_509
+    21301020: desert-long-Tileset_510
+    21301022: desert-long-Tileset_511
+    21301024: desert-long-Tileset_512
+    21301026: desert-long-Tileset_513
+    21301028: desert-long-Tileset_514
+    21301030: desert-long-Tileset_515
+    21301032: desert-long-Tileset_516
+    21301034: desert-long-Tileset_517
+    21301036: desert-long-Tileset_518
+    21301038: desert-long-Tileset_519
+    21301040: desert-long-Tileset_520
+    21301042: desert-long-Tileset_521
+    21301044: desert-long-Tileset_522
+    21301046: desert-long-Tileset_523
+    21301048: desert-long-Tileset_524
+    21301050: desert-long-Tileset_525
+    21301052: desert-long-Tileset_526
+    21301054: desert-long-Tileset_527
+    21301056: desert-long-Tileset_528
+    21301058: desert-long-Tileset_529
+    21301060: desert-long-Tileset_530
+    21301062: desert-long-Tileset_531
+    21301064: desert-long-Tileset_532
+    21301066: desert-long-Tileset_533
+    21301068: desert-long-Tileset_534
+    21301070: desert-long-Tileset_535
+    21301072: desert-long-Tileset_536
+    21301074: desert-long-Tileset_537
+    21301076: desert-long-Tileset_538
+    21301078: desert-long-Tileset_539
+    21301080: desert-long-Tileset_540
+    21301082: desert-long-Tileset_541
+    21301084: desert-long-Tileset_542
+    21301086: desert-long-Tileset_543
+    21301088: desert-long-Tileset_544
+    21301090: desert-long-Tileset_545
+    21301092: desert-long-Tileset_546
+    21301094: desert-long-Tileset_547
+    21301096: desert-long-Tileset_548
+    21301098: desert-long-Tileset_549
+    21301100: desert-long-Tileset_550
+    21301102: desert-long-Tileset_551
+    21301104: desert-long-Tileset_552
+    21301106: desert-long-Tileset_553
+    21301108: desert-long-Tileset_554
+    21301110: desert-long-Tileset_555
+    21301112: desert-long-Tileset_556
+    21301114: desert-long-Tileset_557
+    21301116: desert-long-Tileset_558
+    21301118: desert-long-Tileset_559
+    21301120: desert-long-Tileset_560
+    21301122: desert-long-Tileset_561
+    21301124: desert-long-Tileset_562
+    21301126: desert-long-Tileset_563
+    21301128: desert-long-Tileset_564
+    21301130: desert-long-Tileset_565
+    21301132: desert-long-Tileset_566
+    21301134: desert-long-Tileset_567
+    21301136: desert-long-Tileset_568
+    21301138: desert-long-Tileset_569
+    21301140: desert-long-Tileset_570
+    21301142: desert-long-Tileset_571
+    21301144: desert-long-Tileset_572
+    21301146: desert-long-Tileset_573
+    21301148: desert-long-Tileset_574
+    21301150: desert-long-Tileset_575
+    21301152: desert-long-Tileset_576
+    21301154: desert-long-Tileset_577
+    21301156: desert-long-Tileset_578
+    21301158: desert-long-Tileset_579
+    21301160: desert-long-Tileset_580
+    21301162: desert-long-Tileset_581
+    21301164: desert-long-Tileset_582
+    21301166: desert-long-Tileset_583
+    21301168: desert-long-Tileset_584
+    21301170: desert-long-Tileset_585
+    21301172: desert-long-Tileset_586
+    21301174: desert-long-Tileset_587
+    21301176: desert-long-Tileset_588
+    21301178: desert-long-Tileset_589
+    21301180: desert-long-Tileset_590
+    21301182: desert-long-Tileset_591
+    21301184: desert-long-Tileset_592
+    21301186: desert-long-Tileset_593
+    21301188: desert-long-Tileset_594
+    21301190: desert-long-Tileset_595
+    21301192: desert-long-Tileset_596
+    21301194: desert-long-Tileset_597
+    21301196: desert-long-Tileset_598
+    21301198: desert-long-Tileset_599
+    21301200: desert-long-Tileset_600
+    21301202: desert-long-Tileset_601
+    21301204: desert-long-Tileset_602
+    21301206: desert-long-Tileset_603
+    21301208: desert-long-Tileset_604
+    21301210: desert-long-Tileset_605
+    21301212: desert-long-Tileset_606
+    21301214: desert-long-Tileset_607
+    21301216: desert-long-Tileset_608
+    21301218: desert-long-Tileset_609
+    21301220: desert-long-Tileset_610
+    21301222: desert-long-Tileset_611
+    21301224: desert-long-Tileset_612
+    21301226: desert-long-Tileset_613
+    21301228: desert-long-Tileset_614
+    21301230: desert-long-Tileset_615
+    21301232: desert-long-Tileset_616
+    21301234: desert-long-Tileset_617
+    21301236: desert-long-Tileset_618
+    21301238: desert-long-Tileset_619
+    21301240: desert-long-Tileset_620
+    21301242: desert-long-Tileset_621
+    21301244: desert-long-Tileset_622
+    21301246: desert-long-Tileset_623
+    21301248: desert-long-Tileset_624
+    21301250: desert-long-Tileset_625
+    21301252: desert-long-Tileset_626
+    21301254: desert-long-Tileset_627
+    21301256: desert-long-Tileset_628
+    21301258: desert-long-Tileset_629
+    21301260: desert-long-Tileset_630
+    21301262: desert-long-Tileset_631
+    21301264: desert-long-Tileset_632
+    21301266: desert-long-Tileset_633
+    21301268: desert-long-Tileset_634
+    21301270: desert-long-Tileset_635
+    21301272: desert-long-Tileset_636
+    21301274: desert-long-Tileset_637
+    21301276: desert-long-Tileset_638
+    21301278: desert-long-Tileset_639
+    21301280: desert-long-Tileset_640
+    21301282: desert-long-Tileset_641
+    21301284: desert-long-Tileset_642
+    21301286: desert-long-Tileset_643
+    21301288: desert-long-Tileset_644
+    21301290: desert-long-Tileset_645
+    21301292: desert-long-Tileset_646
+    21301294: desert-long-Tileset_647
+    21301296: desert-long-Tileset_648
+    21301298: desert-long-Tileset_649
+    21301300: desert-long-Tileset_650
+    21301302: desert-long-Tileset_651
+    21301304: desert-long-Tileset_652
+    21301306: desert-long-Tileset_653
+    21301308: desert-long-Tileset_654
+    21301310: desert-long-Tileset_655
+    21301312: desert-long-Tileset_656
+    21301314: desert-long-Tileset_657
+    21301316: desert-long-Tileset_658
+    21301318: desert-long-Tileset_659
+    21301320: desert-long-Tileset_660
+    21301322: desert-long-Tileset_661
+    21301324: desert-long-Tileset_662
+    21301326: desert-long-Tileset_663
+    21301328: desert-long-Tileset_664
+    21301330: desert-long-Tileset_665
+    21301332: desert-long-Tileset_666
+    21301334: desert-long-Tileset_667
+    21301336: desert-long-Tileset_668
+    21301338: desert-long-Tileset_669
+    21301340: desert-long-Tileset_670
+    21301342: desert-long-Tileset_671
+    21301344: desert-long-Tileset_672
+    21301346: desert-long-Tileset_673
+    21301348: desert-long-Tileset_674
+    21301350: desert-long-Tileset_675
+    21301352: desert-long-Tileset_676
+    21301354: desert-long-Tileset_677
+    21301356: desert-long-Tileset_678
+    21301358: desert-long-Tileset_679
+    21301360: desert-long-Tileset_680
+    21301362: desert-long-Tileset_681
+    21301364: desert-long-Tileset_682
+    21301366: desert-long-Tileset_683
+    21301368: desert-long-Tileset_684
+    21301370: desert-long-Tileset_685
+    21301372: desert-long-Tileset_686
+    21301374: desert-long-Tileset_687
+    21301376: desert-long-Tileset_688
+    21301378: desert-long-Tileset_689
+    21301380: desert-long-Tileset_690
+    21301382: desert-long-Tileset_691
+    21301384: desert-long-Tileset_692
+    21301386: desert-long-Tileset_693
+    21301388: desert-long-Tileset_694
+    21301390: desert-long-Tileset_695
+    21301392: desert-long-Tileset_696
+    21301394: desert-long-Tileset_697
+    21301396: desert-long-Tileset_698
+    21301398: desert-long-Tileset_699
+    21301400: desert-long-Tileset_700
+    21301402: desert-long-Tileset_701
+    21301404: desert-long-Tileset_702
+    21301406: desert-long-Tileset_703
+    21301408: desert-long-Tileset_704
+    21301410: desert-long-Tileset_705
+    21301412: desert-long-Tileset_706
+    21301414: desert-long-Tileset_707
+    21301416: desert-long-Tileset_708
+    21301418: desert-long-Tileset_709
+    21301420: desert-long-Tileset_710
+    21301422: desert-long-Tileset_711
+    21301424: desert-long-Tileset_712
+    21301426: desert-long-Tileset_713
+    21301428: desert-long-Tileset_714
+    21301430: desert-long-Tileset_715
+    21301432: desert-long-Tileset_716
+    21301434: desert-long-Tileset_717
+    21301436: desert-long-Tileset_718
+    21301438: desert-long-Tileset_719
+    21301440: desert-long-Tileset_720
+    21301442: desert-long-Tileset_721
+    21301444: desert-long-Tileset_722
+    21301446: desert-long-Tileset_723
+    21301448: desert-long-Tileset_724
+    21301450: desert-long-Tileset_725
+    21301452: desert-long-Tileset_726
+    21301454: desert-long-Tileset_727
+    21301456: desert-long-Tileset_728
+    21301458: desert-long-Tileset_729
+    21301460: desert-long-Tileset_730
+    21301462: desert-long-Tileset_731
+    21301464: desert-long-Tileset_732
+    21301466: desert-long-Tileset_733
+    21301468: desert-long-Tileset_734
+    21301470: desert-long-Tileset_735
+    21301472: desert-long-Tileset_736
+    21301474: desert-long-Tileset_737
+    21301476: desert-long-Tileset_738
+    21301478: desert-long-Tileset_739
+    21301480: desert-long-Tileset_740
+    21301482: desert-long-Tileset_741
+    21301484: desert-long-Tileset_742
+    21301486: desert-long-Tileset_743
+    21301488: desert-long-Tileset_744
+    21301490: desert-long-Tileset_745
+    21301492: desert-long-Tileset_746
+    21301494: desert-long-Tileset_747
+    21301496: desert-long-Tileset_748
+    21301498: desert-long-Tileset_749
+    21301500: desert-long-Tileset_750
+    21301502: desert-long-Tileset_751
+    21301504: desert-long-Tileset_752
+    21301506: desert-long-Tileset_753
+    21301508: desert-long-Tileset_754
+    21301510: desert-long-Tileset_755
+    21301512: desert-long-Tileset_756
+    21301514: desert-long-Tileset_757
+    21301516: desert-long-Tileset_758
+    21301518: desert-long-Tileset_759
+    21301520: desert-long-Tileset_760
+    21301522: desert-long-Tileset_761
+    21301524: desert-long-Tileset_762
+    21301526: desert-long-Tileset_763
+    21301528: desert-long-Tileset_764
+    21301530: desert-long-Tileset_765
+    21301532: desert-long-Tileset_766
+    21301534: desert-long-Tileset_767
+    21301536: desert-long-Tileset_768
+    21301538: desert-long-Tileset_769
+    21301540: desert-long-Tileset_770
+    21301542: desert-long-Tileset_771
+    21301544: desert-long-Tileset_772
+    21301546: desert-long-Tileset_773
+    21301548: desert-long-Tileset_774
+    21301550: desert-long-Tileset_775
+    21301552: desert-long-Tileset_776
+    21301554: desert-long-Tileset_777
+    21301556: desert-long-Tileset_778
+    21301558: desert-long-Tileset_779
+    21301560: desert-long-Tileset_780
+    21301562: desert-long-Tileset_781
+    21301564: desert-long-Tileset_782
+    21301566: desert-long-Tileset_783
+    21301568: desert-long-Tileset_784
+    21301570: desert-long-Tileset_785
+    21301572: desert-long-Tileset_786
+    21301574: desert-long-Tileset_787
+    21301576: desert-long-Tileset_788
+    21301578: desert-long-Tileset_789
+    21301580: desert-long-Tileset_790
+    21301582: desert-long-Tileset_791
+    21301584: desert-long-Tileset_792
+    21301586: desert-long-Tileset_793
+    21301588: desert-long-Tileset_794
+    21301590: desert-long-Tileset_795
+    21301592: desert-long-Tileset_796
+    21301594: desert-long-Tileset_797
+    21301596: desert-long-Tileset_798
+    21301598: desert-long-Tileset_799
+    21301600: desert-long-Tileset_800
+    21301602: desert-long-Tileset_801
+    21301604: desert-long-Tileset_802
+    21301606: desert-long-Tileset_803
+    21301608: desert-long-Tileset_804
+    21301610: desert-long-Tileset_805
+    21301612: desert-long-Tileset_806
+    21301614: desert-long-Tileset_807
+    21301616: desert-long-Tileset_808
+    21301618: desert-long-Tileset_809
+    21301620: desert-long-Tileset_810
+    21301622: desert-long-Tileset_811
+    21301624: desert-long-Tileset_812
+    21301626: desert-long-Tileset_813
+    21301628: desert-long-Tileset_814
+    21301630: desert-long-Tileset_815
+    21301632: desert-long-Tileset_816
+    21301634: desert-long-Tileset_817
+    21301636: desert-long-Tileset_818
+    21301638: desert-long-Tileset_819
+    21301640: desert-long-Tileset_820
+    21301642: desert-long-Tileset_821
+    21301644: desert-long-Tileset_822
+    21301646: desert-long-Tileset_823
+    21301648: desert-long-Tileset_824
+    21301650: desert-long-Tileset_825
+    21301652: desert-long-Tileset_826
+    21301654: desert-long-Tileset_827
+    21301656: desert-long-Tileset_828
+    21301658: desert-long-Tileset_829
+    21301660: desert-long-Tileset_830
+    21301662: desert-long-Tileset_831
+    21301664: desert-long-Tileset_832
+    21301666: desert-long-Tileset_833
+    21301668: desert-long-Tileset_834
+    21301670: desert-long-Tileset_835
+    21301672: desert-long-Tileset_836
+    21301674: desert-long-Tileset_837
+    21301676: desert-long-Tileset_838
+    21301678: desert-long-Tileset_839
+    21301680: desert-long-Tileset_840
+    21301682: desert-long-Tileset_841
+    21301684: desert-long-Tileset_842
+    21301686: desert-long-Tileset_843
+    21301688: desert-long-Tileset_844
+    21301690: desert-long-Tileset_845
+    21301692: desert-long-Tileset_846
+    21301694: desert-long-Tileset_847
+    21301696: desert-long-Tileset_848
+    21301698: desert-long-Tileset_849
+    21301700: desert-long-Tileset_850
+    21301702: desert-long-Tileset_851
+    21301704: desert-long-Tileset_852
+    21301706: desert-long-Tileset_853
+    21301708: desert-long-Tileset_854
+    21301710: desert-long-Tileset_855
+    21301712: desert-long-Tileset_856
+    21301714: desert-long-Tileset_857
+    21301716: desert-long-Tileset_858
+    21301718: desert-long-Tileset_859
+    21301720: desert-long-Tileset_860
+    21301722: desert-long-Tileset_861
+    21301724: desert-long-Tileset_862
+    21301726: desert-long-Tileset_863
+    21301728: desert-long-Tileset_864
+    21301730: desert-long-Tileset_865
+    21301732: desert-long-Tileset_866
+    21301734: desert-long-Tileset_867
+    21301736: desert-long-Tileset_868
+    21301738: desert-long-Tileset_869
+    21301740: desert-long-Tileset_870
+    21301742: desert-long-Tileset_871
+    21301744: desert-long-Tileset_872
+    21301746: desert-long-Tileset_873
+    21301748: desert-long-Tileset_874
+    21301750: desert-long-Tileset_875
+    21301752: desert-long-Tileset_876
+    21301754: desert-long-Tileset_877
+    21301756: desert-long-Tileset_878
+    21301758: desert-long-Tileset_879
+    21301760: desert-long-Tileset_880
+    21301762: desert-long-Tileset_881
+    21301764: desert-long-Tileset_882
+    21301766: desert-long-Tileset_883
+    21301768: desert-long-Tileset_884
+    21301770: desert-long-Tileset_885
+    21301772: desert-long-Tileset_886
+    21301774: desert-long-Tileset_887
+    21301776: desert-long-Tileset_888
+    21301778: desert-long-Tileset_889
+    21301780: desert-long-Tileset_890
+    21301782: desert-long-Tileset_891
+    21301784: desert-long-Tileset_892
+    21301786: desert-long-Tileset_893
+    21301788: desert-long-Tileset_894
+    21301790: desert-long-Tileset_895
+    21301792: desert-long-Tileset_896
+    21301794: desert-long-Tileset_897
+    21301796: desert-long-Tileset_898
+    21301798: desert-long-Tileset_899
+    21301800: desert-long-Tileset_900
+    21301802: desert-long-Tileset_901
+    21301804: desert-long-Tileset_902
+    21301806: desert-long-Tileset_903
+    21301808: desert-long-Tileset_904
+    21301810: desert-long-Tileset_905
+    21301812: desert-long-Tileset_906
+    21301814: desert-long-Tileset_907
+    21301816: desert-long-Tileset_908
+    21301818: desert-long-Tileset_909
+    21301820: desert-long-Tileset_910
+    21301822: desert-long-Tileset_911
+    21301824: desert-long-Tileset_912
+    21301826: desert-long-Tileset_913
+    21301828: desert-long-Tileset_914
+    21301830: desert-long-Tileset_915
+    21301832: desert-long-Tileset_916
+    21301834: desert-long-Tileset_917
+    21301836: desert-long-Tileset_918
+    21301838: desert-long-Tileset_919
+    21301840: desert-long-Tileset_920
+    21301842: desert-long-Tileset_921
+    21301844: desert-long-Tileset_922
+    21301846: desert-long-Tileset_923
+    21301848: desert-long-Tileset_924
+    21301850: desert-long-Tileset_925
+    21301852: desert-long-Tileset_926
+    21301854: desert-long-Tileset_927
+    21301856: desert-long-Tileset_928
+    21301858: desert-long-Tileset_929
+    21301860: desert-long-Tileset_930
+    21301862: desert-long-Tileset_931
+    21301864: desert-long-Tileset_932
+    21301866: desert-long-Tileset_933
+    21301868: desert-long-Tileset_934
+    21301870: desert-long-Tileset_935
+    21301872: desert-long-Tileset_936
+    21301874: desert-long-Tileset_937
+    21301876: desert-long-Tileset_938
+    21301878: desert-long-Tileset_939
+    21301880: desert-long-Tileset_940
+    21301882: desert-long-Tileset_941
+    21301884: desert-long-Tileset_942
+    21301886: desert-long-Tileset_943
+    21301888: desert-long-Tileset_944
+    21301890: desert-long-Tileset_945
+    21301892: desert-long-Tileset_946
+    21301894: desert-long-Tileset_947
+    21301896: desert-long-Tileset_948
+    21301898: desert-long-Tileset_949
+    21301900: desert-long-Tileset_950
+    21301902: desert-long-Tileset_951
+    21301904: desert-long-Tileset_952
+    21301906: desert-long-Tileset_953
+    21301908: desert-long-Tileset_954
+    21301910: desert-long-Tileset_955
+    21301912: desert-long-Tileset_956
+    21301914: desert-long-Tileset_957
+    21301916: desert-long-Tileset_958
+    21301918: desert-long-Tileset_959
+    21301920: desert-long-Tileset_960
+    21301922: desert-long-Tileset_961
+    21301924: desert-long-Tileset_962
+    21301926: desert-long-Tileset_963
+    21301928: desert-long-Tileset_964
+    21301930: desert-long-Tileset_965
+    21301932: desert-long-Tileset_966
+    21301934: desert-long-Tileset_967
+    21301936: desert-long-Tileset_968
+    21301938: desert-long-Tileset_969
+    21301940: desert-long-Tileset_970
+    21301942: desert-long-Tileset_971
+    21301944: desert-long-Tileset_972
+    21301946: desert-long-Tileset_973
+    21301948: desert-long-Tileset_974
+    21301950: desert-long-Tileset_975
+    21301952: desert-long-Tileset_976
+    21301954: desert-long-Tileset_977
+    21301956: desert-long-Tileset_978
+    21301958: desert-long-Tileset_979
+    21301960: desert-long-Tileset_980
+    21301962: desert-long-Tileset_981
+    21301964: desert-long-Tileset_982
+    21301966: desert-long-Tileset_983
+    21301968: desert-long-Tileset_984
+    21301970: desert-long-Tileset_985
+    21301972: desert-long-Tileset_986
+    21301974: desert-long-Tileset_987
+    21301976: desert-long-Tileset_988
+    21301978: desert-long-Tileset_989
+    21301980: desert-long-Tileset_990
+    21301982: desert-long-Tileset_991
+    21301984: desert-long-Tileset_992
+    21301986: desert-long-Tileset_993
+    21301988: desert-long-Tileset_994
+    21301990: desert-long-Tileset_995
+    21301992: desert-long-Tileset_996
+    21301994: desert-long-Tileset_997
+    21301996: desert-long-Tileset_998
+    21301998: desert-long-Tileset_999
+    21302000: desert-long-Tileset_1000
+    21302002: desert-long-Tileset_1001
+    21302004: desert-long-Tileset_1002
+    21302006: desert-long-Tileset_1003
+    21302008: desert-long-Tileset_1004
+    21302010: desert-long-Tileset_1005
+    21302012: desert-long-Tileset_1006
+    21302014: desert-long-Tileset_1007
+    21302016: desert-long-Tileset_1008
+    21302018: desert-long-Tileset_1009
+    21302020: desert-long-Tileset_1010
+    21302022: desert-long-Tileset_1011
+    21302024: desert-long-Tileset_1012
+    21302026: desert-long-Tileset_1013
+    21302028: desert-long-Tileset_1014
+    21302030: desert-long-Tileset_1015
+    21302032: desert-long-Tileset_1016
+    21302034: desert-long-Tileset_1017
+    21302036: desert-long-Tileset_1018
+    21302038: desert-long-Tileset_1019
+    21302040: desert-long-Tileset_1020
+    21302042: desert-long-Tileset_1021
+    21302044: desert-long-Tileset_1022
+    21302046: desert-long-Tileset_1023
+    21302048: desert-long-Tileset_1024
+    21302050: desert-long-Tileset_1025
+    21302052: desert-long-Tileset_1026
+    21302054: desert-long-Tileset_1027
+    21302056: desert-long-Tileset_1028
+    21302058: desert-long-Tileset_1029
+    21302060: desert-long-Tileset_1030
+    21302062: desert-long-Tileset_1031
+    21302064: desert-long-Tileset_1032
+    21302066: desert-long-Tileset_1033
+    21302068: desert-long-Tileset_1034
+    21302070: desert-long-Tileset_1035
+    21302072: desert-long-Tileset_1036
+    21302074: desert-long-Tileset_1037
+    21302076: desert-long-Tileset_1038
+    21302078: desert-long-Tileset_1039
+    21302080: desert-long-Tileset_1040
+    21302082: desert-long-Tileset_1041
+    21302084: desert-long-Tileset_1042
+    21302086: desert-long-Tileset_1043
+    21302088: desert-long-Tileset_1044
+    21302090: desert-long-Tileset_1045
+    21302092: desert-long-Tileset_1046
+    21302094: desert-long-Tileset_1047
+    21302096: desert-long-Tileset_1048
+    21302098: desert-long-Tileset_1049
+    21302100: desert-long-Tileset_1050
+    21302102: desert-long-Tileset_1051
+    21302104: desert-long-Tileset_1052
+    21302106: desert-long-Tileset_1053
+    21302108: desert-long-Tileset_1054
+    21302110: desert-long-Tileset_1055
+    21302112: desert-long-Tileset_1056
+    21302114: desert-long-Tileset_1057
+    21302116: desert-long-Tileset_1058
+    21302118: desert-long-Tileset_1059
+    21302120: desert-long-Tileset_1060
+    21302122: desert-long-Tileset_1061
+    21302124: desert-long-Tileset_1062
+    21302126: desert-long-Tileset_1063
+    21302128: desert-long-Tileset_1064
+    21302130: desert-long-Tileset_1065
+    21302132: desert-long-Tileset_1066
+    21302134: desert-long-Tileset_1067
+    21302136: desert-long-Tileset_1068
+    21302138: desert-long-Tileset_1069
+    21302140: desert-long-Tileset_1070
+    21302142: desert-long-Tileset_1071
+    21302144: desert-long-Tileset_1072
+    21302146: desert-long-Tileset_1073
+    21302148: desert-long-Tileset_1074
+    21302150: desert-long-Tileset_1075
+    21302152: desert-long-Tileset_1076
+    21302154: desert-long-Tileset_1077
+    21302156: desert-long-Tileset_1078
+    21302158: desert-long-Tileset_1079
+    21302160: desert-long-Tileset_1080
+    21302162: desert-long-Tileset_1081
+    21302164: desert-long-Tileset_1082
+    21302166: desert-long-Tileset_1083
+    21302168: desert-long-Tileset_1084
+    21302170: desert-long-Tileset_1085
+    21302172: desert-long-Tileset_1086
+    21302174: desert-long-Tileset_1087
+    21302176: desert-long-Tileset_1088
+    21302178: desert-long-Tileset_1089
+    21302180: desert-long-Tileset_1090
+    21302182: desert-long-Tileset_1091
+    21302184: desert-long-Tileset_1092
+    21302186: desert-long-Tileset_1093
+    21302188: desert-long-Tileset_1094
+    21302190: desert-long-Tileset_1095
+    21302192: desert-long-Tileset_1096
+    21302194: desert-long-Tileset_1097
+    21302196: desert-long-Tileset_1098
+    21302198: desert-long-Tileset_1099
+    21302200: desert-long-Tileset_1100
+    21302202: desert-long-Tileset_1101
+    21302204: desert-long-Tileset_1102
+    21302206: desert-long-Tileset_1103
+    21302208: desert-long-Tileset_1104
+    21302210: desert-long-Tileset_1105
+    21302212: desert-long-Tileset_1106
+    21302214: desert-long-Tileset_1107
+    21302216: desert-long-Tileset_1108
+    21302218: desert-long-Tileset_1109
+    21302220: desert-long-Tileset_1110
+    21302222: desert-long-Tileset_1111
+    21302224: desert-long-Tileset_1112
+    21302226: desert-long-Tileset_1113
+    21302228: desert-long-Tileset_1114
+    21302230: desert-long-Tileset_1115
+    21302232: desert-long-Tileset_1116
+    21302234: desert-long-Tileset_1117
+    21302236: desert-long-Tileset_1118
+    21302238: desert-long-Tileset_1119
+    21302240: desert-long-Tileset_1120
+    21302242: desert-long-Tileset_1121
+    21302244: desert-long-Tileset_1122
+    21302246: desert-long-Tileset_1123
+    21302248: desert-long-Tileset_1124
+    21302250: desert-long-Tileset_1125
+    21302252: desert-long-Tileset_1126
+    21302254: desert-long-Tileset_1127
+    21302256: desert-long-Tileset_1128
+    21302258: desert-long-Tileset_1129
+    21302260: desert-long-Tileset_1130
+    21302262: desert-long-Tileset_1131
+    21302264: desert-long-Tileset_1132
+    21302266: desert-long-Tileset_1133
+    21302268: desert-long-Tileset_1134
+    21302270: desert-long-Tileset_1135
+    21302272: desert-long-Tileset_1136
+    21302274: desert-long-Tileset_1137
+    21302276: desert-long-Tileset_1138
+    21302278: desert-long-Tileset_1139
+    21302280: desert-long-Tileset_1140
+    21302282: desert-long-Tileset_1141
+    21302284: desert-long-Tileset_1142
+    21302286: desert-long-Tileset_1143
+    21302288: desert-long-Tileset_1144
+    21302290: desert-long-Tileset_1145
+    21302292: desert-long-Tileset_1146
+    21302294: desert-long-Tileset_1147
+    21302296: desert-long-Tileset_1148
+    21302298: desert-long-Tileset_1149
+    21302300: desert-long-Tileset_1150
+    21302302: desert-long-Tileset_1151
+    21302304: desert-long-Tileset_1152
+    21302306: desert-long-Tileset_1153
+    21302308: desert-long-Tileset_1154
+    21302310: desert-long-Tileset_1155
+    21302312: desert-long-Tileset_1156
+    21302314: desert-long-Tileset_1157
+    21302316: desert-long-Tileset_1158
+    21302318: desert-long-Tileset_1159
+    21302320: desert-long-Tileset_1160
+    21302322: desert-long-Tileset_1161
+    21302324: desert-long-Tileset_1162
+    21302326: desert-long-Tileset_1163
+    21302328: desert-long-Tileset_1164
+    21302330: desert-long-Tileset_1165
+    21302332: desert-long-Tileset_1166
+    21302334: desert-long-Tileset_1167
+    21302336: desert-long-Tileset_1168
+    21302338: desert-long-Tileset_1169
+    21302340: desert-long-Tileset_1170
+    21302342: desert-long-Tileset_1171
+    21302344: desert-long-Tileset_1172
+    21302346: desert-long-Tileset_1173
+    21302348: desert-long-Tileset_1174
+    21302350: desert-long-Tileset_1175
+    21302352: desert-long-Tileset_1176
+    21302354: desert-long-Tileset_1177
+    21302356: desert-long-Tileset_1178
+    21302358: desert-long-Tileset_1179
+    21302360: desert-long-Tileset_1180
+    21302362: desert-long-Tileset_1181
+    21302364: desert-long-Tileset_1182
+    21302366: desert-long-Tileset_1183
+    21302368: desert-long-Tileset_1184
+    21302370: desert-long-Tileset_1185
+    21302372: desert-long-Tileset_1186
+    21302374: desert-long-Tileset_1187
+    21302376: desert-long-Tileset_1188
+    21302378: desert-long-Tileset_1189
+    21302380: desert-long-Tileset_1190
+    21302382: desert-long-Tileset_1191
+    21302384: desert-long-Tileset_1192
+    21302386: desert-long-Tileset_1193
+    21302388: desert-long-Tileset_1194
+    21302390: desert-long-Tileset_1195
+    21302392: desert-long-Tileset_1196
+    21302394: desert-long-Tileset_1197
+    21302396: desert-long-Tileset_1198
+    21302398: desert-long-Tileset_1199
+    21302400: desert-long-Tileset_1200
+    21302402: desert-long-Tileset_1201
+    21302404: desert-long-Tileset_1202
+    21302406: desert-long-Tileset_1203
+    21302408: desert-long-Tileset_1204
+    21302410: desert-long-Tileset_1205
+    21302412: desert-long-Tileset_1206
+    21302414: desert-long-Tileset_1207
+    21302416: desert-long-Tileset_1208
+    21302418: desert-long-Tileset_1209
+    21302420: desert-long-Tileset_1210
+    21302422: desert-long-Tileset_1211
+    21302424: desert-long-Tileset_1212
+    21302426: desert-long-Tileset_1213
+    21302428: desert-long-Tileset_1214
+    21302430: desert-long-Tileset_1215
+    21302432: desert-long-Tileset_1216
+    21302434: desert-long-Tileset_1217
+    21302436: desert-long-Tileset_1218
+    21302438: desert-long-Tileset_1219
+    21302440: desert-long-Tileset_1220
+    21302442: desert-long-Tileset_1221
+    21302444: desert-long-Tileset_1222
+    21302446: desert-long-Tileset_1223
+    21302448: desert-long-Tileset_1224
+    21302450: desert-long-Tileset_1225
+    21302452: desert-long-Tileset_1226
+    21302454: desert-long-Tileset_1227
+    21302456: desert-long-Tileset_1228
+    21302458: desert-long-Tileset_1229
+    21302460: desert-long-Tileset_1230
+    21302462: desert-long-Tileset_1231
+    21302464: desert-long-Tileset_1232
+    21302466: desert-long-Tileset_1233
+    21302468: desert-long-Tileset_1234
+    21302470: desert-long-Tileset_1235
+    21302472: desert-long-Tileset_1236
+    21302474: desert-long-Tileset_1237
+    21302476: desert-long-Tileset_1238
+    21302478: desert-long-Tileset_1239
+    21302480: desert-long-Tileset_1240
+    21302482: desert-long-Tileset_1241
+    21302484: desert-long-Tileset_1242
+    21302486: desert-long-Tileset_1243
+    21302488: desert-long-Tileset_1244
+    21302490: desert-long-Tileset_1245
+    21302492: desert-long-Tileset_1246
+    21302494: desert-long-Tileset_1247
+    21302496: desert-long-Tileset_1248
+    21302498: desert-long-Tileset_1249
+    21302500: desert-long-Tileset_1250
+    21302502: desert-long-Tileset_1251
+    21302504: desert-long-Tileset_1252
+    21302506: desert-long-Tileset_1253
+    21302508: desert-long-Tileset_1254
+    21302510: desert-long-Tileset_1255
+    21302512: desert-long-Tileset_1256
+    21302514: desert-long-Tileset_1257
+    21302516: desert-long-Tileset_1258
+    21302518: desert-long-Tileset_1259
+    21302520: desert-long-Tileset_1260
+    21302522: desert-long-Tileset_1261
+    21302524: desert-long-Tileset_1262
+    21302526: desert-long-Tileset_1263
+    21302528: desert-long-Tileset_1264
+    21302530: desert-long-Tileset_1265
+    21302532: desert-long-Tileset_1266
+    21302534: desert-long-Tileset_1267
+    21302536: desert-long-Tileset_1268
+    21302538: desert-long-Tileset_1269
+    21302540: desert-long-Tileset_1270
+    21302542: desert-long-Tileset_1271
+    21302544: desert-long-Tileset_1272
+    21302546: desert-long-Tileset_1273
+    21302548: desert-long-Tileset_1274
+    21302550: desert-long-Tileset_1275
+    21302552: desert-long-Tileset_1276
+    21302554: desert-long-Tileset_1277
+    21302556: desert-long-Tileset_1278
+    21302558: desert-long-Tileset_1279
+    21302560: desert-long-Tileset_1280
+    21302562: desert-long-Tileset_1281
+    21302564: desert-long-Tileset_1282
+    21302566: desert-long-Tileset_1283
+    21302568: desert-long-Tileset_1284
+    21302570: desert-long-Tileset_1285
+    21302572: desert-long-Tileset_1286
+    21302574: desert-long-Tileset_1287
+    21302576: desert-long-Tileset_1288
+    21302578: desert-long-Tileset_1289
+    21302580: desert-long-Tileset_1290
+    21302582: desert-long-Tileset_1291
+    21302584: desert-long-Tileset_1292
+    21302586: desert-long-Tileset_1293
+    21302588: desert-long-Tileset_1294
+    21302590: desert-long-Tileset_1295
+    21302592: desert-long-Tileset_1296
+    21302594: desert-long-Tileset_1297
+    21302596: desert-long-Tileset_1298
+    21302598: desert-long-Tileset_1299
+    21302600: desert-long-Tileset_1300
+    21302602: desert-long-Tileset_1301
+    21302604: desert-long-Tileset_1302
+    21302606: desert-long-Tileset_1303
+    21302608: desert-long-Tileset_1304
+    21302610: desert-long-Tileset_1305
+    21302612: desert-long-Tileset_1306
+    21302614: desert-long-Tileset_1307
+    21302616: desert-long-Tileset_1308
+    21302618: desert-long-Tileset_1309
+    21302620: desert-long-Tileset_1310
+    21302622: desert-long-Tileset_1311
+    21302624: desert-long-Tileset_1312
+    21302626: desert-long-Tileset_1313
+    21302628: desert-long-Tileset_1314
+    21302630: desert-long-Tileset_1315
+    21302632: desert-long-Tileset_1316
+    21302634: desert-long-Tileset_1317
+    21302636: desert-long-Tileset_1318
+    21302638: desert-long-Tileset_1319
+    21302640: desert-long-Tileset_1320
+    21302642: desert-long-Tileset_1321
+    21302644: desert-long-Tileset_1322
+    21302646: desert-long-Tileset_1323
+    21302648: desert-long-Tileset_1324
+    21302650: desert-long-Tileset_1325
+    21302652: desert-long-Tileset_1326
+    21302654: desert-long-Tileset_1327
+    21302656: desert-long-Tileset_1328
+    21302658: desert-long-Tileset_1329
+    21302660: desert-long-Tileset_1330
+    21302662: desert-long-Tileset_1331
+    21302664: desert-long-Tileset_1332
+    21302666: desert-long-Tileset_1333
+    21302668: desert-long-Tileset_1334
+    21302670: desert-long-Tileset_1335
+    21302672: desert-long-Tileset_1336
+    21302674: desert-long-Tileset_1337
+    21302676: desert-long-Tileset_1338
+    21302678: desert-long-Tileset_1339
+    21302680: desert-long-Tileset_1340
+    21302682: desert-long-Tileset_1341
+    21302684: desert-long-Tileset_1342
+    21302686: desert-long-Tileset_1343
+    21302688: desert-long-Tileset_1344
+    21302690: desert-long-Tileset_1345
+    21302692: desert-long-Tileset_1346
+    21302694: desert-long-Tileset_1347
+    21302696: desert-long-Tileset_1348
+    21302698: desert-long-Tileset_1349
+    21302700: desert-long-Tileset_1350
+    21302702: desert-long-Tileset_1351
+    21302704: desert-long-Tileset_1352
+    21302706: desert-long-Tileset_1353
+    21302708: desert-long-Tileset_1354
+    21302710: desert-long-Tileset_1355
+    21302712: desert-long-Tileset_1356
+    21302714: desert-long-Tileset_1357
+    21302716: desert-long-Tileset_1358
+    21302718: desert-long-Tileset_1359
+    21302720: desert-long-Tileset_1360
+    21302722: desert-long-Tileset_1361
+    21302724: desert-long-Tileset_1362
+    21302726: desert-long-Tileset_1363
+    21302728: desert-long-Tileset_1364
+    21302730: desert-long-Tileset_1365
+    21302732: desert-long-Tileset_1366
+    21302734: desert-long-Tileset_1367
+    21302736: desert-long-Tileset_1368
+    21302738: desert-long-Tileset_1369
+    21302740: desert-long-Tileset_1370
+    21302742: desert-long-Tileset_1371
+    21302744: desert-long-Tileset_1372
+    21302746: desert-long-Tileset_1373
+    21302748: desert-long-Tileset_1374
+    21302750: desert-long-Tileset_1375
+    21302752: desert-long-Tileset_1376
+    21302754: desert-long-Tileset_1377
+    21302756: desert-long-Tileset_1378
+    21302758: desert-long-Tileset_1379
+    21302760: desert-long-Tileset_1380
+    21302762: desert-long-Tileset_1381
+    21302764: desert-long-Tileset_1382
+    21302766: desert-long-Tileset_1383
+    21302768: desert-long-Tileset_1384
+    21302770: desert-long-Tileset_1385
+    21302772: desert-long-Tileset_1386
+    21302774: desert-long-Tileset_1387
+    21302776: desert-long-Tileset_1388
+    21302778: desert-long-Tileset_1389
+    21302780: desert-long-Tileset_1390
+    21302782: desert-long-Tileset_1391
+    21302784: desert-long-Tileset_1392
+    21302786: desert-long-Tileset_1393
+    21302788: desert-long-Tileset_1394
+    21302790: desert-long-Tileset_1395
+    21302792: desert-long-Tileset_1396
+    21302794: desert-long-Tileset_1397
+    21302796: desert-long-Tileset_1398
+    21302798: desert-long-Tileset_1399
+    21302800: desert-long-Tileset_1400
+    21302802: desert-long-Tileset_1401
+    21302804: desert-long-Tileset_1402
+    21302806: desert-long-Tileset_1403
+    21302808: desert-long-Tileset_1404
+    21302810: desert-long-Tileset_1405
+    21302812: desert-long-Tileset_1406
+    21302814: desert-long-Tileset_1407
+    21302816: desert-long-Tileset_1408
+    21302818: desert-long-Tileset_1409
+    21302820: desert-long-Tileset_1410
+    21302822: desert-long-Tileset_1411
+    21302824: desert-long-Tileset_1412
+    21302826: desert-long-Tileset_1413
+    21302828: desert-long-Tileset_1414
+    21302830: desert-long-Tileset_1415
+    21302832: desert-long-Tileset_1416
+    21302834: desert-long-Tileset_1417
+    21302836: desert-long-Tileset_1418
+    21302838: desert-long-Tileset_1419
+    21302840: desert-long-Tileset_1420
+    21302842: desert-long-Tileset_1421
+    21302844: desert-long-Tileset_1422
+    21302846: desert-long-Tileset_1423
+    21302848: desert-long-Tileset_1424
+    21302850: desert-long-Tileset_1425
+    21302852: desert-long-Tileset_1426
+    21302854: desert-long-Tileset_1427
+    21302856: desert-long-Tileset_1428
+    21302858: desert-long-Tileset_1429
+    21302860: desert-long-Tileset_1430
+    21302862: desert-long-Tileset_1431
+    21302864: desert-long-Tileset_1432
+    21302866: desert-long-Tileset_1433
+    21302868: desert-long-Tileset_1434
+    21302870: desert-long-Tileset_1435
+    21302872: desert-long-Tileset_1436
+    21302874: desert-long-Tileset_1437
+    21302876: desert-long-Tileset_1438
+    21302878: desert-long-Tileset_1439
+    21302880: desert-long-Tileset_1440
+    21302882: desert-long-Tileset_1441
+    21302884: desert-long-Tileset_1442
+    21302886: desert-long-Tileset_1443
+    21302888: desert-long-Tileset_1444
+    21302890: desert-long-Tileset_1445
+    21302892: desert-long-Tileset_1446
+    21302894: desert-long-Tileset_1447
+    21302896: desert-long-Tileset_1448
+    21302898: desert-long-Tileset_1449
+    21302900: desert-long-Tileset_1450
+    21302902: desert-long-Tileset_1451
+    21302904: desert-long-Tileset_1452
+    21302906: desert-long-Tileset_1453
+    21302908: desert-long-Tileset_1454
+    21302910: desert-long-Tileset_1455
+    21302912: desert-long-Tileset_1456
+    21302914: desert-long-Tileset_1457
+    21302916: desert-long-Tileset_1458
+    21302918: desert-long-Tileset_1459
+    21302920: desert-long-Tileset_1460
+    21302922: desert-long-Tileset_1461
+    21302924: desert-long-Tileset_1462
+    21302926: desert-long-Tileset_1463
+    21302928: desert-long-Tileset_1464
+    21302930: desert-long-Tileset_1465
+    21302932: desert-long-Tileset_1466
+    21302934: desert-long-Tileset_1467
+    21302936: desert-long-Tileset_1468
+    21302938: desert-long-Tileset_1469
+    21302940: desert-long-Tileset_1470
+    21302942: desert-long-Tileset_1471
+    21302944: desert-long-Tileset_1472
+    21302946: desert-long-Tileset_1473
+    21302948: desert-long-Tileset_1474
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: desert-long-Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 4032
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 3968
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3904
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_35
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_36
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_37
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_38
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_40
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_41
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_42
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_43
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_44
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_46
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_47
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_48
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_49
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_50
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3776
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_51
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_52
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_53
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_54
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_55
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_56
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_57
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_58
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_59
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_60
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_61
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3712
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_62
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_63
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_64
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_65
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_66
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_67
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_68
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_69
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_70
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_71
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 3648
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_72
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_73
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_74
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_75
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_76
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_77
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_78
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_79
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_80
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_81
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_82
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_83
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_84
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 3584
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_87
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_89
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_90
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_91
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_92
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_93
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_94
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_95
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_96
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_97
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_98
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_99
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_100
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_101
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_102
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_103
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_104
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_105
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_106
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_107
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_108
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_109
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_110
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_111
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_112
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_113
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_114
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_115
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_116
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_117
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_118
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_119
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_120
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_121
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_122
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_123
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_124
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_125
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_126
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_127
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_128
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_129
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_130
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_131
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_132
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_133
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_134
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_135
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_136
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_137
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_138
+      rect:
+        serializedVersion: 2
+        x: 3392
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_139
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_140
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_141
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_142
+      rect:
+        serializedVersion: 2
+        x: 3648
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_143
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 3456
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_144
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_145
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_146
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_147
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_148
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_149
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_150
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_151
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_152
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_153
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_154
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_155
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_156
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_157
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_158
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_159
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_160
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_161
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_162
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3328
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_163
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3264
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_164
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3264
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_165
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3264
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_166
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3264
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_167
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3264
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_168
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_169
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_170
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_171
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_172
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_173
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_174
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_175
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_176
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_177
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_178
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_179
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 3200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_180
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 3136
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_181
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3136
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_182
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3136
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_183
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3136
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_184
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_185
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_186
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_187
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_188
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_189
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_190
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_191
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_192
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_193
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_194
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_195
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_196
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_197
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_198
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_199
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_200
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_201
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_202
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 3072
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_203
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_204
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_205
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_206
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_207
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_208
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_209
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_210
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_211
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_212
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_213
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_214
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_215
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_216
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_217
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_218
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_219
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_220
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_221
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_222
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_223
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_224
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_225
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_226
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_227
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_228
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_229
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_230
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_231
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_232
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_233
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_234
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_235
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_236
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_237
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_238
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_239
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_240
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_241
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_242
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_243
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_244
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_245
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 2816
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_246
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_247
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2752
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_248
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_249
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_250
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_251
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_252
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_253
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_254
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_255
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_256
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_257
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_258
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_259
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_260
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_261
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_262
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_263
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_264
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_265
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2688
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_266
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_267
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_268
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_269
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_270
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_271
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_272
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_273
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2624
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_274
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_275
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_276
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_277
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_278
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_279
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_280
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_281
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_282
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_283
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_284
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_285
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 2560
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_286
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_287
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_288
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_289
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_290
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_291
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_292
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_293
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_294
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_295
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_296
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: desert-long-Tileset_297
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2496
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

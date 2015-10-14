@@ -57,9 +57,17 @@ namespace GSP.Items.Inventories
         // Use this for initialisation
         protected virtual void Awake()
         {
-            // Initialise the dictionaries
-            items = new Dictionary<int, List<Item>>();
-            slots = new Dictionary<int, List<GameObject>>();
+            // Initialise the dictionaries only if necessary
+            if (items == null && slots == null)
+            {
+                items = new Dictionary<int, List<Item>>();
+                slots = new Dictionary<int, List<GameObject>>();
+            } // end if
+            else
+            {
+                // Otherwise clean the dictionaries.
+                Clean();
+            } // end else
             
             // Get the tooltip GameObject
             tooltip = GameObject.Find("Canvas").transform.Find("Tooltip").gameObject;

@@ -165,6 +165,25 @@ namespace GSP
             }
 		}//end Start
 	
+		void Update()
+		{
+			if(playerTurn && !playerMerchant.GameObj.GetComponent<Player>().IsAI)
+			{
+				if(Input.GetKeyDown(KeyCode.Alpha1))
+				{
+					Head ();
+				} //end if 1 key
+				if(Input.GetKeyDown(KeyCode.Alpha2))
+				{
+					Torso();
+				} //end if 2 key
+				if(Input.GetKeyDown(KeyCode.Alpha3))
+				{
+					Feint();
+				} //end if 3 key
+			} //end if playerTurn && !IsAI
+		} //end Update
+
 		void Fight()
 		{
 			// Play a sword sound
@@ -193,11 +212,11 @@ namespace GSP
 			// Update turn and fight box
 			playerTurn = !playerTurn;
 			linesOfText++;
-			if(linesOfText > 6)
+			if(linesOfText > 4)
 			{
 				fightBoxText.transform.position = new Vector3(
 					fightBoxText.transform.position.x,
-					fightBoxText.transform.position.y + 19);
+					fightBoxText.transform.position.y + 26);
 			} //end if
 
 			// Check if the player lost the fight
@@ -256,7 +275,7 @@ namespace GSP
 				// Update the fightbox position
 				fightBoxText.transform.position = new Vector3(
 					fightBoxText.transform.position.x,
-					fightBoxText.transform.position.y + 35);
+					fightBoxText.transform.position.y + 40);
 
 				// Return to game after 3 seconds
 				playerTurn = false;
@@ -274,7 +293,7 @@ namespace GSP
 				// Update the fightbox position
 				fightBoxText.transform.position = new Vector3(
 					fightBoxText.transform.position.x,
-					fightBoxText.transform.position.y + 19);
+					fightBoxText.transform.position.y + 26);
 
 				// Return to game after 3 seconds
 				playerTurn = false;

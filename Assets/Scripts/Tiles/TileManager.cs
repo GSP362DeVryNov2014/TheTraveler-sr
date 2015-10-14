@@ -9,6 +9,8 @@ using GSP.Core;
 using GSP.Items;
 using System;
 using UnityEngine;
+using X_UniTMX;
+using System.Collections.Generic;
 
 namespace GSP.Tiles
 {
@@ -19,245 +21,478 @@ namespace GSP.Tiles
      * Description: Manages all the tiles in the game.
      * 
      *******************************************************************************/
-    public static class TileManager
+    public class TileManager : MonoBehaviour
 	{
-		// These will be the same that is used in Tiled when creating the map
-		static int tileSize = 0;		// The size of each tile
-		static int numTilesWide = 0;	// The number of tiles in width
-		static int numTilesHigh = 0;	// The number of tile in height
+        Map tiledMap;                       // The map that was loaded for the game
+        List<Vector2> resourcePositions;    // List of positions of resources on the map
+        List<Vector2> marketPositions;      // List of positions of markets on the map
 
-    	// Sets the dimensions of the Tiled map; This should only be called once when initialising the map
-		// You shouldn't change these values unless you redo the map in Tiled
-		// NOTE: Setting these incorrectly will screw things up
-		public static void SetDimensions(int size, int tilesWide, int tilesHigh)
+        public TextAsset mapFile;           // The map file the TileManager is managing, set through the editor
+        public Material defaultMaterial;    // The default material for the sprites, set through the editor
+
+    	// Used for initialisation
+        void Awake()
+        {
+            // Initialise the lists
+            resourcePositions = new List<Vector2>();
+            marketPositions = new List<Vector2>();
+        } // end Awake
+        
+        // Sets the dimensions of the Tiled map; This should only be called once when initialising the map
+		void SetDimensions(int size, int tilesWide, int tilesHigh)
 		{
-			tileSize = size;
-			numTilesWide = tilesWide;
-			numTilesHigh = tilesHigh;
+            // Update the map values of the TileUtils class
+            TileUtils.Update(size, tilesWide, tilesHigh);
 		} // end SetDimensions
 
-		// Generates tiles and adds them to the dictionary
-		public static void GenerateAndAddTiles()
+		// Generates a map for the game's level.
+		public void GenerateMap()
 		{
-			// Get all the game objects tagged as resources
-            GameObject[] resourceObjects = GameObject.FindGameObjectsWithTag("Resource");
+            // Create a new map and supply a callback for when the map is loaded.
+            new Map(mapFile, string.Empty, OnMapLoaded);
+		} // end GenerateAndAddTiles
 
-            // Loop over the map; Width first
-            for (int width = 32; width < (int)MapSize.x; width += 64)
+        // Callback for when the map has been loaded.
+        void OnMapLoaded(Map map)
+        {
+            // Set the loaded map
+            tiledMap = map;
+
+            /*
+             * Generate the map with the following options:
+             * 
+             * TileManager's GameObject is the parent in the hierarchy
+             * The default material is the default sprite's material
+             */
+            tiledMap.Generate(this.gameObject, defaultMaterial);
+
+            // Generate any tile collisions
+            tiledMap.GenerateTileCollisions();
+
+            MapObjectLayer resourcesObjectLayer;    // The object layer for resources
+
+            // Check if the map has a resources object layer
+            if ((resourcesObjectLayer = tiledMap.GetObjectLayer("Resources")) != null)
             {
-                // Then height
-                for (int height = 32; height < (int)MapSize.y; height += 64)
+                // Get the list of MapObjects on the resources layer
+                List<MapObject> resourceObjects = resourcesObjectLayer.Objects;
+
+                // Check if the game is new
+                if (GameMaster.Instance.IsNew)
                 {
-                    // We are in the fourth quadrant so the y is negative
-                    Vector3 key = new Vector3(width, height * -1, -1.0f);
-
-                    // Create an empty Tile at the given position
-                    Tile newTile = new Tile(key, ResourceType.None, null);
-
-                    // Add the Tile to the dictionary
-                    TileDictionary.AddEntry(key, newTile);
-                } // end inner for
-            } // end outer for
-
-            // Check if the game is new
-            if (GameMaster.Instance.IsNew)
-            {
-                // Now loop over the resourceObjects array and set the Tiles to resources
-                for (int index = 0; index < resourceObjects.Length; index++)
-                {
-                    // Get the position of the resource
-                    Vector3 key = ToPixels(resourceObjects[index].transform.position);
-
-                    // Add the position to the list
-                    TileDictionary.ResourcePositions.Add(key);
-
-                    // Holds the Tile's ResourceType
-                    ResourceType resourceType = resourceObjects[index].GetComponent<ResourceTile>().Type;
-
-                    // Update the tile at the given key
-                    TileDictionary.UpdateTile(key, resourceType, resourceObjects[index]);
-                } // end for
-            } // end if
-            else
-            {
-                // Otherwise the game isn't new so load the resource positions
-                GameMaster.Instance.LoadResources();
-
-                // Get the list's length
-                int length = resourceObjects.Length;
-
-                // Now loop over the resourceObjects array and set the Tiles to resources
-                for (int index = 0; index < length; index++)
-                {
-                    // Get the position of the resource
-                    Vector3 key = ToPixels(resourceObjects[index].transform.position);
-
-                    // Check if the key is in the list
-                    if (TileDictionary.ResourcePositions.Contains(key))
+                    // The game is new so add all the resources to the list
+                    foreach (var resource in resourceObjects)
                     {
-                        // Holds the Tile's ResourceType
-                        ResourceType resourceType = resourceObjects[index].GetComponent<ResourceTile>().Type;
+                        resourcePositions.Add(ToMap(resource.Bounds));
+                    } // end foreach
 
-                        // Update the tile at the given key
-                        TileDictionary.UpdateTile(key, resourceType, resourceObjects[index]);
+                    // Finally, save the resource positions list
+                    GameMaster.Instance.SaveResources();
+                } // end if
+                else
+                {
+                    // The game isn't new so load all the saved resources
+                    resourcePositions = GameMaster.Instance.LoadResources();
+                } // end else
+                
+                // Loop through the objects to check if they're on the resources list
+                foreach (var resource in resourceObjects)
+                {
+                    // Make sure the resource is in the list
+                    if (resourcePositions.Contains(ToMap(resource.Bounds)))
+                    {
+                        // Generate the prefab for the resource
+                        tiledMap.GeneratePrefab(resource, Vector2.zero, null, false, true);
+                    } // end if
+                } // end foreach
+            } // end if
+
+            // Check if the map has a markets object layer
+            if (tiledMap.GetObjectLayer("Markets") != null)
+            {
+                // Get the list of MapObjects on the markets layer
+                List<MapObject> marketObjects = tiledMap.GetObjectLayer("Markets").Objects;
+
+                // Add all the markets to the list
+                foreach (var market in marketObjects)
+                {
+                    marketPositions.Add(ToMap(market.Bounds));
+                } // end foreach
+                
+                // Generate the colliders from this layer
+                tiledMap.GenerateCollidersFromLayer("Markets");
+                // Generate the prefabs from this layer
+                tiledMap.GeneratePrefabsFromLayer("Markets", Vector2.zero, false, true);
+            } // end if
+
+            // Finally, Update the TileUtils static class
+            SetDimensions(tiledMap.MapRenderParameter.TileHeight, tiledMap.MapRenderParameter.Width,
+                tiledMap.MapRenderParameter.Height);
+        } // end OnMapLoaded
+
+        // Gets the resource type of a given resource on the map
+        public ResourceType GetResourceType(string resourceName)
+        {
+            MapObjectLayer resourcesObjectLayer;    // The object layer for resources
+            
+            // The resource type used to return the resource's type
+            ResourceType resourceType = ResourceType.None;
+
+            // Check if the map has a resources object layer
+            if ((resourcesObjectLayer = tiledMap.GetObjectLayer("Resources")) != null)
+            {
+                // Get the list of MapObjects on the resources layer
+                List<MapObject> resourceObjects = resourcesObjectLayer.Objects;
+
+                // Find the object that matches the given name
+                MapObject mapResource = resourceObjects.Find(resource => resource.Name == resourceName);
+
+                // Check if we found anything
+                if (mapResource != null)
+                {
+                    // Check if the resource has a resource type property
+                    if (mapResource.HasProperty("restype"))
+                    {
+                        // Get the resource type property
+                        string type = mapResource.GetPropertyAsString("restype");
+
+                        // Try to parse the ResourceType from the Type
+                        try
+                        {
+                            resourceType = (ResourceType)Enum.Parse(typeof(ResourceType), type);
+
+                            // Check if the result is defined
+                            if (!Enum.IsDefined(typeof(ResourceType), resourceType))
+                            {
+                                // It's not defined so return None
+                                Debug.LogErrorFormat("'{0}' is not defined within the ResourceType enum.", resourceType.ToString());
+                                resourceType = ResourceType.None;
+                            } // end if
+                        } // end try
+                        catch (ArgumentException)
+                        {
+                            // We couldn't parse so return None
+                            Debug.LogErrorFormat("Parsing the Type '{0}' as a ResourceType failed.", type);
+                            resourceType = ResourceType.None;
+                        } // end catch
                     } // end if
                     else
                     {
-                        // Otherwise, we want to get rid of the resource object
-                        GameObject.Destroy(resourceObjects[index]);
+                        // Otherwise, the resource doesn't have a resource type property so return none
+                        resourceType = ResourceType.None;
                     } // end else
-                } // end for
+                } // end if
+                else
+                {
+                    // Otherwise, nothing was found so return none
+                    resourceType = ResourceType.None;
+                } // end else
+            }
+
+            // Return the resource type of the given resource on the map
+            return resourceType;
+        } // end GetResourceType
+
+        // Gets the resource type of a given resource on the map
+        public ResourceType GetResourceType(Vector2 key)
+        {
+            // First, get the map object at the specified location
+            MapObject resource = GetObject(1, key);
+
+            // Make sure the object exists
+            if (resource != null)
+            {
+                // Get the object's resource type by its name now
+                return GetResourceType(resource.Name);
+            } // end if
+            else
+            {
+                // Otherwise the object doesn't exist so return none
+                return ResourceType.None;
             } // end else
-		} // end GenerateAndAddTiles
+        } // end GetResourceType
 
-		// Converts unity units to pixels for use on the map
-		public static Vector3 ToPixels(Vector3 param)
-		{
-			// To convert the parameter to pixels that the resource positions use, multiply by 100
-            Vector3 tmp = new Vector3(param.x * 100, param.y * 100, param.z * 100);
-
-			// Check if the width (x) is within the valid map positions and Clamp if not
-            if (tmp.x > MaxWidth)
-			{
-				tmp.x = MaxWidth;
-			} // end if
-
-			// Check if the height (y) is within the valid map positions and Clamp if not
-            if (tmp.y < MaxHeight)
-			{
-				tmp.y = MaxHeight;
-			} // end if
-
-			// We need integers for the keys to work. So convert the temp vector3's params to integers
-			// NOTE: Trying to use "(int)tmp.x" results in the wrong number. So use "Convert.ToInt32(tmp.x)"
-            int resX = Convert.ToInt32(tmp.x);
-            int resY = Convert.ToInt32(tmp.y);
-            int resZ = Convert.ToInt32(tmp.z);
-
-			// Everything should be fine now so return the result
-            return new Vector3(resX, resY, resZ);
-		} // end ToPixels
-
-		// Converts pixels to unity units for use on the map
-		public static Vector3 ToUnits(Vector3 param)
-		{
-			// To convert the parameter to units that unity positions use, divide by 100
-            Vector3 tmp = new Vector3(param.x / 100.0f, param.y / 100.0f, param.z / 100.0f);
-
-			// Gets the max width and height in units
-            float maxWidth = MaxWidth / 100.0f;
-            float maxHeight = MaxHeight / 100.0f;
-			
-			// Check if the width (x) is within the valid map positions and Clamp if not
-            if (tmp.x > maxWidth)
-			{
-				tmp.x = maxWidth;
-			} // end if
-			
-			// Check if the height (y) is within the valid map positions and Clamp if not
-            if (tmp.y < maxHeight)
-			{
-				tmp.y = maxHeight;
-			} // end if
-			
-			// Everything should be fine now so return the result
-			return tmp;
-		} // end ToUnits
-
-        // Gets the tile's Size
-        public static int TileSize
+        // Gets the market type of a given market on the map
+        public MarketType GetMarketType(string marketName)
         {
-            get { return tileSize; }
-        } // end TileSize
+            MapObjectLayer marketsObjectLayer;    // The object layer for markets
 
-        // Gets the number of tiles in width
-        public static int NumTilesWide
+            // The market type used to return the market's type
+            MarketType marketType = MarketType.None;
+
+            // Check if the map has a markets object layer
+            if ((marketsObjectLayer = tiledMap.GetObjectLayer("Markets")) != null)
+            {
+                // Get the list of MapObjects on the markets layer
+                List<MapObject> marketObjects = marketsObjectLayer.Objects;
+
+                // Find the object that matches the given name
+                MapObject mapMarket = marketObjects.Find(market => market.Name == marketName);
+
+                // Check if we found anything
+                if (mapMarket != null)
+                {
+                    // Check if the market has a restype property
+                    if (mapMarket.HasProperty("restype"))
+                    {
+                        // Get the restype property
+                        string type = mapMarket.GetPropertyAsString("restype");
+
+                        // Try to parse the MarketType from the type
+                        try
+                        {
+                            marketType = (MarketType)Enum.Parse(typeof(MarketType), type);
+
+                            // Check if the result is defined
+                            if (!Enum.IsDefined(typeof(MarketType), marketType))
+                            {
+                                // It's not defined so return None
+                                Debug.LogErrorFormat("'{0}' is not defined within the MarketType enum.", marketType.ToString());
+                                marketType = MarketType.None;
+                            } // end if
+                        } // end try
+                        catch (ArgumentException)
+                        {
+                            // We couldn't parse so return None
+                            Debug.LogErrorFormat("Parsing the Type '{0}' as a MarketType failed.", type);
+                            marketType = MarketType.None;
+                        } // end catch
+                    } // end if
+                    else
+                    {
+                        // Otherwise, the resource doesn't have a restype property so return none
+                        marketType = MarketType.None;
+                    } // end else
+                } // end if
+                else
+                {
+                    // Otherwise, nothing was found so return none
+                    marketType = MarketType.None;
+                } // end else
+            }
+
+            // Return the market type of the given market on the map
+            return marketType;
+        } // end GetResourceType
+
+        // Gets the market type of a given resource on the map
+        public MarketType GetMarketType(Vector2 key)
         {
-            get { return numTilesWide; }
-        } // end NumTilesWide
+            // First, get the map object at the specified location
+            MapObject market = GetObject(2, key);
 
-        // Gets the number of tiles in width
-        public static int NumTilesHigh
+            // Make sure the object exists
+            if (market != null)
+            {
+                // Get the object's market type by its name now
+                return GetMarketType(market.Name);
+            } // end if
+            else
+            {
+                // Otherwise the object doesn't exist so return none
+                return MarketType.None;
+            } // end else
+        } // end GetMarketType
+
+        // Gets if a key exists in the list
+        bool EntryExists(int list, Vector2 key)
         {
-            get { return numTilesHigh; }
-        } // end NumTilesWide
+            // Switch over the list parameter
+            switch (list)
+            {
+                // Resource list
+                case 1:
+                    {
+                        return resourcePositions.Contains(key);
+                    } // end case 1
+                // Market list
+                case 2:
+                    {
+                        return marketPositions.Contains(key);
+                    } // end case 2
+                default:
+                    {
+                        return false;
+                    } // end default case
+            } // end switch
+        } // end EntryExists
+        
+        // Gets a map object's game object at the given coordinates
+        MapObject GetObject(int list, Vector2 key)
+        {
+            // Holds the returned value
+            MapObject mapObject = null;
+            
+            // Check if the entry exists
+            if (EntryExists(list, key))
+            {
+                // The key exists so retrieve the object
 
-        // Gets the max height you can place a tile
-        public static int MaxHeight
+                MapObjectLayer objectLayer;    // The object layer
+
+                // Switch over the list parameter
+                switch (list)
+                {
+                    // Resource list
+                    case 1:
+                        {
+                            // Check if the map has a resources object layer
+                            if ((objectLayer = tiledMap.GetObjectLayer("Resources")) != null)
+                            {
+                                // Get the list of MapObjects on the resources layer
+                                List<MapObject> resourceObjects = objectLayer.Objects;
+
+                                // Find the object that matches the given position
+                                MapObject mapResource = resourceObjects.Find(resource => resource.Bounds.x == key.x && resource.Bounds.y == Math.Abs(key.y));
+
+                                // Check if we found anything
+                                if (mapResource != null)
+                                {
+                                    // Set the map object to the found resource
+                                    mapObject = mapResource;
+                                } // end if
+                                else
+                                {
+                                    // Otherwise, nothing was found so return null
+                                    mapObject = null;
+                                } // end else
+                            } // end if
+
+                            break;
+                        } // end case 1
+                    // Market list
+                    case 2:
+                        {
+                            // Check if the map has a markets object layer
+                            if ((objectLayer = tiledMap.GetObjectLayer("Markets")) != null)
+                            {
+                                // Get the list of MapObjects on the markets layer
+                                List<MapObject> marketObjects = objectLayer.Objects;
+
+                                // Find the object that matches the given position
+                                MapObject mapMarket = marketObjects.Find(market => market.Bounds.x == key.x && market.Bounds.y == Math.Abs(key.y));
+
+                                // Check if we found anything
+                                if (mapMarket != null)
+                                {
+                                    // Set the map object to the found resource
+                                    mapObject = mapMarket;
+                                } // end if
+                                else
+                                {
+                                    // Otherwise, nothing was found so return null
+                                    mapObject = null;
+                                } // end else
+                            } // end if
+
+                            break;
+                        } // end case 2
+                    default:
+                        {
+                            mapObject = null;
+                            break;
+                        } // end default case
+                } // end switch
+            } // end if
+            else
+            {
+                // Otherwise the key doesn't exist so return null
+                mapObject = null;
+            } // end else
+
+            // Return the map object
+            return mapObject;
+        } // end GetObject
+
+        // Gets a resource's game object
+        public GameObject GetResource(Vector2 key)
+        {
+            // Retrieve the map object first
+            MapObject mapObject = GetObject(1, key);
+
+            // Make sure the object isn't null
+            if (mapObject != null)
+            {
+                // Return the map object's game object
+                return mapObject.LinkedGameObject;
+            } // end if
+            else
+            {
+                // Otherwise, simply return null
+                return null;
+            } // end else
+        } // end GetResource
+
+        // Gets a market's game object
+        public GameObject GetMarket(Vector2 key)
+        {
+            // Retrieve the map object first
+            MapObject mapObject = GetObject(2, key);
+
+            // Make sure the object isn't null
+            if (mapObject != null)
+            {
+                // Return the map object's game object
+                return mapObject.LinkedGameObject;
+            } // end if
+            else
+            {
+                // Otherwise, simply return null
+                return null;
+            } // end else
+        } // end GetMarket
+
+        // Removes a resource from the list and the map
+        public void RemoveResource(Vector2 key)
+        {
+            // Check to make sure the entry exists
+            if (EntryExists(1, key))
+            {
+                // If the entry exists, it means the correct key format was entered.
+                
+                // First destroy the game object
+                Destroy(GetResource(key));
+
+                // Finally, remove it from the list
+                resourcePositions.Remove(key);
+            } // end if
+        } // end RemoveResource
+
+        // Converts the map objects' bounding box positions to the map's version
+        Vector2 ToMap(Rect bounds)
+        {
+            // Create a new vector based upon the bound's x and y
+            Vector2 tmp = new Vector2(bounds.x, bounds.y);
+            tmp.y *= -1.0f;
+
+            // Return the converted vector
+            return tmp;
+        } // end ToMap
+
+        // Gets the resource's positions
+        public List<Vector2> ResourcePositions
         {
             get
             {
-                // Calculate the height of the map; Then subtract half the tile size
-                // This is the highest coord the tile can be placed at; This is because we start at 32
-                int temp = NumTilesHigh * TileSize - (TileSize / 2);
+                // Create a temp list based upon the resource positions
+                List<Vector2> tempPositions = resourcePositions;
 
-                // Since we're in the fourth quadrant, the y value is negative
-                return (temp * -1);
+                // Return the temp list
+                return tempPositions;
             } // end get
-        } // end MaxHeight
+        } // end ResourcePositions
 
-        // Gets the max width you can place a tile
-        public static int MaxWidth
+        // Gets the market's positions
+        public List<Vector2> MarketPositions
         {
             get
             {
-                // Calculate the width of the map; Then subtract half the tile size
-                // This is the highest coord the tile can be placed at; This is because we start at 32.
-                return (NumTilesWide * TileSize - (TileSize / 2));
+                // Create a temp list based upon the market positions
+                List<Vector2> tempPositions = marketPositions;
+
+                // Return the temp list
+                return tempPositions;
             } // end get
-        } // end MaxHeight
-
-        // Gets the min height you can place a tile
-        public static int MinHeight
-        {
-            get { return (TileSize / 2) * -1; }
-        } // end MinWidth
-
-        // Gets the min width you can place a tile
-        public static int MinWidth
-        {
-            get { return TileSize / 2; }
-        } // end MaxWidth
-
-        // Gets the min height you can place a tile in units
-        public static float MinHeightUnits
-        {
-            get { return ToUnits(new Vector3(MinHeight, 0, 0)).x; }
-        } // end MinHeightUnits
-
-        // Gets the min width you can place a tile in units
-        public static float MinWidthUnits
-        {
-            get { return ToUnits(new Vector3(MinWidth, 0, 0)).x; }
-        } // end MinWidthUnits
-
-        // Gets the max height you can place a tile in units
-        public static float MaxHeightUnits
-        {
-            get { return ToUnits(new Vector3(MaxHeight, 0, 0)).x; }
-        } // end MaxHeightUnits
-
-        // Gets the max width you can place a tile in units
-        public static float MaxWidthUnits
-        {
-            get { return ToUnits(new Vector3(MaxWidth, 0, 0)).x; }
-        } // end MaxWidthUnits
-
-        // Gets the map's size
-        public static Vector2 MapSize
-        {
-            get { return new Vector2(NumTilesWide * TileSize, NumTilesHigh * TileSize); }
-        } // end MapSize
-
-        // Gets the standard move distance for a player
-        public static float PlayerMoveDistance
-        {
-            get
-            {
-                // Originally ToUnits is a Vector3 operation. So we pass in zeroes for y and z here.
-                // All we care about is the x component.
-                return ToUnits(new Vector3(TileSize, 0, 0)).x;
-            } // end get
-        } // end PlayerMoveDistance
+        } // end MarketPositions
 	} // end TileManager
 } // end GSP.Tiles

@@ -69,22 +69,19 @@ namespace GSP
             // Get the inventory script
             inventory = GameObject.Find("Canvas").transform.Find("PlayerInventory").GetComponent<PlayerInventory>();
 			
-			// Get the tile at the player's position
+			// Get the player's position
 			Vector3 tmp = player.transform.localPosition;
 
-			// Fix the z-axis; change by Damien to get the tiles to work again.
-			tmp.z = -0.01f;
-            Tile currentTile = TileDictionary.GetTile(TileManager.ToPixels(tmp));
+            // Get the tile manager's reference
+            TileManager tileManager = GameObject.Find("TileManager").GetComponent<TileManager>();
+
+            // Get the resource type of the tile
+            ResourceType resourceTileType = tileManager.GetResourceType(tmp);
+            // Get the market type of the tile
+            MarketType marketTileType = tileManager.GetMarketType(tmp);
 			
-			// Was a tile found?
-			if(currentTile == null)
-			{
-				// No tile found so return "This is not a valid \ntile. No event occured.";
-				guiResult = "This is not a valid \ntile. No event occured.";
-				return "Nothing";
-			} // end if
-			// Otherwise, was the tile a non-resource?
-			else if (currentTile.ResourceType == ResourceType.None) 
+			// Was the tile type a non-resource and non-market?
+            if (resourceTileType == ResourceType.None && marketTileType == MarketType.None)
 			{
 				// Roll a die to get a number from 1-100
                 if (die == null)
@@ -115,40 +112,60 @@ namespace GSP
 					return "Nothing";
 				} // end else
 			} //end if
-			// Otherwise, the tile is a resource
+			// Otherwise, the tile type is a resource or market
 			else
 			{
-                // Get the resource from the database
-                Item temp = ItemDatabase.Instance.Items.Find(resource => resource.Type == currentTile.ResourceType.ToString());
-				
-				// Pick up the resource
-                playerMerchant.PickupResource((Resource)temp, 1);
-				
-				// Declare what was landed on
-				guiResult = "You got a resource:\n" + temp.Name;
+                // Check if the tile is not a market
+                if (marketTileType == MarketType.None)
+                {
+                    // Get the resource from the database
+                    Item temp = ItemDatabase.Instance.Items.Find(resource => resource.Type == resourceTileType.ToString());
 
-                // Play found for what was landed on
-                if(temp.Name == "Fish")
-                {
-                    // Play fish sound
-					AudioManager.Instance.PlayFish();
+                    // Pick up the resource
+                    playerMerchant.PickupResource((Resource)temp, 1);
+
+                    // Declare what was landed on
+                    guiResult = "You got a resource:\n" + temp.Name;
+
+                    // Play found for what was landed on
+                    if (temp.Name == "Fish")
+                    {
+                        // Play fish sound
+                        AudioManager.Instance.PlayFish();
+                    } // end if
+                    else if (temp.Name == "Wood")
+                    {
+                        // Play wood sound
+                        AudioManager.Instance.PlayWood();
+                    } // end else if
+                    else if (temp.Name == "Wool")
+                    {
+                        // Play wool sound
+                        AudioManager.Instance.PlayShear();
+                    } // end else if
+                    else
+                    {
+                        // Play ore sound
+                        AudioManager.Instance.PlayMine();
+                    } // end else
+                    
+                    return guiResult;
                 } // end if
-                else if(temp.Name == "Wood")
-                {
-                    // Play wood sound
-					AudioManager.Instance.PlayWood();
-                } // end else if
-                else if(temp.Name == "Wool")
-                {
-                    // Play wool sound
-					AudioManager.Instance.PlayShear();
-                } // end else if
+                // Otherwise the tile is a market
                 else
                 {
-                    // Play ore sound
-					AudioManager.Instance.PlayMine();
+                    // Check which type of market the player is one
+                    if (marketTileType == MarketType.Market)
+                    {
+                        // The player landed on regular market
+                        return "Market";
+                    } // end if
+                    else
+                    {
+                        // The player landed on the end game village
+                        return "Village";
+                    } // end else
                 } // end else
-				return guiResult;
 			} // end else
 		} // end DetermineEvent
 

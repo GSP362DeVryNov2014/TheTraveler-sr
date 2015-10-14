@@ -274,10 +274,11 @@ namespace GSP.Entities.Neutrals
                     {
                         // Get the resource's position
                         Vector3 tmp = GameObj.transform.localPosition;
-                        // Change the z to make tiles work
-                        tmp.z = -0.01f;
+
+                        // Get the reference to the tile manager
+                        TileManager tileManager = GameObject.Find("TileManager").GetComponent<TileManager>();
                         // Remove the resource from the map
-                        TileDictionary.RemoveResource(TileManager.ToPixels(tmp));
+                        tileManager.RemoveResource(tmp);
                     } // end if
 
                     // Return success

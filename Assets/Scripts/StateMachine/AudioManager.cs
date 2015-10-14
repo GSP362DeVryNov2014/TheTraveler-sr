@@ -65,8 +65,27 @@ namespace GSP
             DontDestroyOnLoad(gameObject);
 		} // end Awake
 
-		// Note: Function names always start with a capital letter - Damien
-        
+		// Audio sound functions
+		public void MuteMusic()
+		{
+			musicSource.mute = !musicSource.mute; 
+		} //end MuteMusic
+
+		public void MuteSFX()
+		{
+			sfxSource.mute = !sfxSource.mute;
+		} //end MuteSFX
+
+		public void MusicVolume(float vol)
+		{
+			musicSource.volume = vol;
+		} //end MusicVolume
+
+		public void SFXVolume(float vol)
+		{
+			sfxSource.volume = vol;
+		} //end SFXVolume
+
         // SFX clip functions
 		// Sets a single passed clip to a source clip and plays it
 		public void PlaySingle(AudioClip clip)

@@ -29,6 +29,7 @@ TagManager:
   - EuroMap
   - CakeChartTag
   - Inventory
+  - Markets
   layers:
   - Default
   - TransparentFX

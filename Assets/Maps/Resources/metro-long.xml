@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="45" height="11" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="metro-long-Tileset" tilewidth="64" tileheight="64">
+  <image source="metro-long-Tileset.png" width="4096" height="2048"/>
+ </tileset>
+ <tileset firstgid="2049" name="misc" tilewidth="64" tileheight="64">
+  <image source="misc_tiles.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Ground" width="45" height="11">
+  <data encoding="base64">
+   hQMAAAcEAACJBAAAEwUAAJwFAAANAwAAHwYAAIYCAAAFAgAAhAEAAAMBAACCAAAAgwAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAAGAAAABkAAAAaAAAAGwAAABwAAAAdAAAAHgAAAB8AAAAgAAAAhgMAAAgEAACKBAAAFAUAAJ0FAAAOAwAAIAYAAAAAAAAGAgAAhQEAAAQBAAAFAQAAhAAAAIUAAACGAAAAhwAAAIgAAACJAAAAigAAAIsAAACMAAAAjQAAAAAAAACPAAAAkAAAAJEAAACSAAAAkwAAAJQAAACVAAAAlgAAAJcAAACYAAAAmQAAAJoAAACbAAAAnAAAAAAAAACeAAAAnwAAAKAAAAChAAAAogAAAKMAAACkAAAAhwMAAAkEAACLBAAAFQUAAJ4FAAAPAwAAIQYAAIgCAAAHAgAAhgEAAIcBAAAGAQAABwEAAAgBAAAJAQAACgEAAAsBAAAMAQAADQEAAA4BAAAPAQAAEAEAABEBAAASAQAAEwEAABQBAAAVAQAAFgEAABcBAAAYAQAAGQEAABoBAAAbAQAAHAEAAB0BAAAeAQAAHwEAACABAAAhAQAAIgEAACMBAAAkAQAAJQEAACYBAAAnAQAAiAMAAAoEAACMBAAAFgUAAJ8FAAAQAwAAIgYAAIkCAAAIAgAACQIAAIgBAACJAQAAigEAAIsBAACMAQAAjQEAAI4BAACPAQAAkAEAAJEBAACSAQAAkwEAAJQBAACVAQAAlgEAAJcBAACYAQAAmQEAAJoBAACbAQAAnAEAAJ0BAACeAQAAnwEAAKABAAChAQAAogEAAKMBAACkAQAApQEAAKYBAACnAQAAqAEAAKkBAACqAQAAiQMAAAsEAACNBAAAFwUAAKAFAAARAwAAIwYAAIoCAACLAgAACgIAAAsCAAAMAgAADQIAAA4CAAAPAgAAEAIAABECAAASAgAAEwIAABQCAAAVAgAAFgIAABcCAAAYAgAAGQIAABoCAAAbAgAAHAIAAB0CAAAeAgAAHwIAACACAAAhAgAAIgIAACMCAAAkAgAAJQIAACYCAAAnAgAAKAIAACkCAAAqAgAAKwIAACwCAAAtAgAAigMAAAwEAACOBAAAGAUAAKEFAAASAwAAJAYAACUGAACMAgAAjQIAAI4CAACPAgAAkAIAAJECAACSAgAAkwIAAJQCAACVAgAAlgIAAJcCAACYAgAAmQIAAJoCAACbAgAAnAIAAJ0CAACeAgAAnwIAAKACAAChAgAAogIAAKMCAACkAgAApQIAAKYCAACnAgAAqAIAAKkCAACqAgAAqwIAAKwCAACtAgAArgIAAK8CAACwAgAAiwMAAA0EAACPBAAAGQUAAKIFAAATAwAAFAMAACYGAAAnBgAAKAYAACkGAAAqBgAAKwYAACwGAAAtBgAALgYAAC8GAAAZBQAAogUAABMDAAAUAwAAFQMAABYDAAAXAwAAGAMAABkDAAAaAwAAGwMAABwDAAAdAwAAHgMAAB8DAAAgAwAAIQMAACIDAAAjAwAAJAMAACUDAAAmAwAAJwMAACgDAAApAwAAKgMAACsDAAAsAwAAjAMAAA4EAACQBAAAmgUAAKMFAACkBQAApQUAAKYFAACnBQAAqAUAAKkFAACqBQAAqwUAAKwFAACtBQAArgUAAK8FAAAaBQAAGwUAABwFAAAdBQAAHgUAAB8FAAAgBQAAIQUAACIFAAAjBQAAJAUAACUFAAAmBQAAJwUAACgFAAApBQAAKgUAACsFAAAsBQAALQUAAC4FAAAvBQAAMAUAADEFAAAyBQAAMwUAADQFAAA1BQAAjQMAAA8EAACRBAAAkgQAAJMEAACUBAAAlQQAAJYEAACXBAAAmAQAAJkEAACaBAAAmwQAAJwEAACdBAAAngQAAJ8EAACgBAAAoQQAAKIEAACjBAAApAQAAKUEAACmBAAApwQAAKgEAACpBAAAqgQAAKsEAACsBAAArQQAAK4EAACvBAAAsAQAALEEAACyBAAAswQAALQEAAC1BAAAtgQAALcEAAC4BAAAuQQAALoEAAC7BAAAjgMAABAEAAARBAAAEgQAABMEAAAUBAAAFQQAABYEAAAXBAAAGAQAABkEAAAaBAAAGwQAABwEAAAdBAAAHgQAAB8EAAAgBAAAIQQAACIEAAAjBAAAJAQAACUEAAAmBAAAJwQAACgEAAApBAAAKgQAACsEAAAsBAAALQQAAC4EAAAvBAAAMAQAADEEAAAyBAAAMwQAADQEAAA1BAAANgQAADcEAAA4BAAAOQQAADoEAAA7BAAAjwMAAJADAACRAwAAkgMAAJMDAACUAwAAlQMAAJYDAACXAwAAmAMAAJkDAACaAwAAmwMAAJwDAACdAwAAngMAAJ8DAACgAwAAoQMAAKIDAACjAwAApAMAAKUDAACmAwAApwMAAKgDAACpAwAAqgMAAKsDAACsAwAArQMAAK4DAACvAwAAsAMAALEDAACyAwAAswMAALQDAAC1AwAAtgMAALcDAAC4AwAAuQMAALoDAAC7AwAA
+  </data>
+ </layer>
+ <layer name="Foreground" width="45" height="11">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+ <objectgroup name="Resources">
+  <object name="Wool01" type="NoCollider" x="1088" y="64" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wool"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wool"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wool02" type="NoCollider" x="320" y="64" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wool"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wool"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Fish01" type="NoCollider" x="128" y="576" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Fish"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Fish"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Fish02" type="NoCollider" x="1216" y="576" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Fish"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Fish"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Fish03" type="NoCollider" x="1472" y="256" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Fish"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Fish"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Fish04" type="NoCollider" x="2048" y="576" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Fish"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Fish"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wood01" type="NoCollider" x="1920" y="64" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wood"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wood"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wood02" type="NoCollider" x="2304" y="256" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wood"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wood"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wood03" type="NoCollider" x="384" y="256" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wood"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wood"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Markets">
+  <object name="Market01" type="NoCollider" x="704" y="320" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Market"/>
+    <property name="prefab" value="Market"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Market"/>
+    <property name="tag" value="Markets"/>
+   </properties>
+  </object>
+  <object name="Market02" type="NoCollider" x="1664" y="320" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Market"/>
+    <property name="prefab" value="Market"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Market"/>
+    <property name="tag" value="Markets"/>
+   </properties>
+  </object>
+  <object name="Market03" type="NoCollider" x="2624" y="0" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Market"/>
+    <property name="prefab" value="Village"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Village"/>
+    <property name="tag" value="Markets"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

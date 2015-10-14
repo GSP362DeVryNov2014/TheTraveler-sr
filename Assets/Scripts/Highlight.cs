@@ -27,7 +27,7 @@ namespace GSP
         public static void GenerateHighlight(Vector3 position, int travelDistance)
 		{
 			// Initialise the temporary position to a single tile above the player's position
-            Vector3 tmpPos = new Vector3(position.x, position.y + TileManager.PlayerMoveDistance, position.z);
+            Vector3 tmpPos = new Vector3(position.x, position.y + TileUtils.PlayerMoveDistance, position.z);
 
 			// Truncate the y value now
             tmpPos.y = Convert.ToInt32(tmpPos.y * 100) / 100.0f;
@@ -36,7 +36,7 @@ namespace GSP
 			for (int northIndex = 0; northIndex < travelDistance; northIndex++)
 			{
 				// Check if we have hit the min height
-				if (tmpPos.y > TileManager.MinHeightUnits)
+                if (tmpPos.y > TileUtils.MinHeight)
 				{
 					// Reached min height so break out of the loop
 					break;
@@ -47,12 +47,12 @@ namespace GSP
                     AddHighlight(tmpPos);
 					
 					// Advance the position to the next tile
-					tmpPos.y += TileManager.PlayerMoveDistance;
+                    tmpPos.y += TileUtils.PlayerMoveDistance;
 				} // end else
 			} // end for
 
 			// Reset the temporary vector to be a single tile to the right of the player's position
-            tmpPos = new Vector3(position.x + TileManager.PlayerMoveDistance, position.y, position.z);
+            tmpPos = new Vector3(position.x + TileUtils.PlayerMoveDistance, position.y, position.z);
 
 			// Truncate the x value now
             tmpPos.x = Convert.ToInt32(tmpPos.x * 100) / 100.0f;
@@ -61,7 +61,7 @@ namespace GSP
 			for (int eastIndex = 0; eastIndex < travelDistance; eastIndex++)
 			{
 				// Check if we have hit the max width
-				if (tmpPos.x > TileManager.MaxWidthUnits)
+                if (tmpPos.x > TileUtils.MaxWidth)
 				{
 					// Reached min height so break out of the loop
 					break;
@@ -72,12 +72,12 @@ namespace GSP
                     AddHighlight(tmpPos);
 					
 					// Advance the position to the next tile
-					tmpPos.x += TileManager.PlayerMoveDistance;
+                    tmpPos.x += TileUtils.PlayerMoveDistance;
 				} // end else
 			} // end for
 
 			// Reset the temporary vector to be a single tile below the player's position
-            tmpPos = new Vector3(position.x, position.y - TileManager.PlayerMoveDistance, position.z);
+            tmpPos = new Vector3(position.x, position.y - TileUtils.PlayerMoveDistance, position.z);
 			
 			// Truncate the y value now
 			tmpPos.y = Convert.ToInt32(tmpPos.y * 100) / 100.0f;
@@ -86,7 +86,7 @@ namespace GSP
 			for (int southIndex = 0; southIndex < travelDistance; southIndex++)
 			{
 				// Check if we have hit the min height
-				if (tmpPos.y < TileManager.MaxHeightUnits)
+                if (tmpPos.y < TileUtils.MaxHeight)
 				{
 					// Reached min height so break out of the loop
 					break;
@@ -97,12 +97,12 @@ namespace GSP
                     AddHighlight(tmpPos);
 					
 					// Advance the position to the next tile
-					tmpPos.y -= TileManager.PlayerMoveDistance;
+                    tmpPos.y -= TileUtils.PlayerMoveDistance;
 				} // end else
 			} // end for
 
 			// Reset the temporary vector to be a single tile to the left of the player's position
-            tmpPos = new Vector3(position.x - TileManager.PlayerMoveDistance, position.y, position.z);
+            tmpPos = new Vector3(position.x - TileUtils.PlayerMoveDistance, position.y, position.z);
 			
 			// Truncate the x value now
             tmpPos.x = Convert.ToInt32(tmpPos.x * 100) / 100.0f;
@@ -111,7 +111,7 @@ namespace GSP
 			for (int westIndex = 0; westIndex < travelDistance; westIndex++)
 			{
 				// Check if we have hit the max width
-				if (tmpPos.x < TileManager.MinWidthUnits)
+                if (tmpPos.x < TileUtils.MinWidth)
 				{
 					// Reached min height so break out of the loop
 					break;
@@ -122,7 +122,7 @@ namespace GSP
                     AddHighlight(tmpPos);
 					
 					// Advance the position to the next tile
-					tmpPos.x -= TileManager.PlayerMoveDistance;
+                    tmpPos.x -= TileUtils.PlayerMoveDistance;
 				} // end else
 			} // end for
 		} // end GenerateHighlight

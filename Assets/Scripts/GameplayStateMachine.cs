@@ -10,12 +10,12 @@ using GSP.Core;
 using GSP.Entities.Neutrals;
 using GSP.Items;
 using GSP.Tiles;
-using System;
-using UnityEngine;
-using UnityEngine.UI;
 using GSP.Items.Inventories;
 using GSP.Char.Allies;
 using GSP.Entities.Friendlies;
+using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace GSP
 {
@@ -56,6 +56,7 @@ namespace GSP
 		int guiPlayerTurn;  	                	// Whos turn is it
 		int guiMaxWeight;							// Maximum weight player can carry
 		int guiCurrentWeight;						// Total weight of player at the moment
+		float movementCooldown;						// Cooldown to prevent spaming of arrows during movement
         bool isPlayerAI;                            // Whether the player is an AI
 
 		// HUD Elements
@@ -87,18 +88,17 @@ namespace GSP
         GUIMovement guiMovement;		            // The GUIMovement component reference
 		MapEvent guiMapEvent;						// The MapEvent component reference
 		string mapEventResult;						// Result of the map event
+        TileManager tileManager;                    // Manages the loading of the map.
 
         // Runs when the object if first instantiated, because this object will occur once through the game,
         // these values are the beginning of game values
         // Note: Values should be updated at the EndTurn State
         void Start()
 		{
-            //TODO: Damien: Replace Tile stuff later
-            // Clear the tile dictionary
-            TileDictionary.Clean();
-            // Set the dimensions and generate/add the tiles
-            TileManager.SetDimensions(64, 20, 16);
-            TileManager.GenerateAndAddTiles();
+            // Get the reference to the tile manager
+            tileManager = GameObject.Find("TileManager").GetComponent<TileManager>();
+            // Generate the map
+            tileManager.GenerateMap();
 
 			// Get HUD elements
             guiPlayerName = GameObject.Find("CurrentPlayer/PlayerNamePanel/PlayerName").GetComponent<Text>();
@@ -146,6 +146,7 @@ namespace GSP
 
 			// Set starting values             		            
 			guiDiceDistVal = 0;
+			movementCooldown = 0.0f;
 
             // The player is not an AI by default
             isPlayerAI = false;
@@ -310,19 +311,6 @@ namespace GSP
         // Updates the state machine and things; runs every frame
         void Update()
         {
-            // TODO: Damien: This is disabled until it can be properly implemented into the game.
-            //if (Input.GetKeyDown(KeyCode.M) && !isPaused)
-            //{
-            //    // Save the players
-            //    GameMaster.Instance.SavePlayers();
-                
-            //    // Save the resources
-            //    GameMaster.Instance.SaveResources();
-
-            //    // Finally, tell the GameMaster to load the end scene
-            //    GameMaster.Instance.LoadLevel("Market");
-            //}
-            
             // This was set to true at the end of Start()
             if (canInitAfterStart)
             {
@@ -336,6 +324,32 @@ namespace GSP
             else if(!isPaused)
             {
                 // Update any values that affect GUI before creating GUI
+				// Mute
+				if(Input.GetKeyDown(KeyCode.M))
+				{
+					AudioManager.Instance.MuteMusic();
+					AudioManager.Instance.MuteSFX();
+				} //end if
+
+				// Pause
+				if(Input.GetKeyDown(KeyCode.P))
+				{
+					PauseGame();
+				} //end if
+
+				// Inventory
+				if(Input.GetKeyDown(KeyCode.I))
+				{
+					ShowInventory();
+				} //end if
+
+				// Allies
+				if(Input.GetKeyDown(KeyCode.A))
+				{
+					ShowAllies ();
+				} //end if
+
+				// Run StateMachine
                 StateMachine();
             } // end else if
         } // end Update
@@ -392,6 +406,12 @@ namespace GSP
 
                         // Set the action button's text to roll dice
                         actionButtonText.text = "Roll Dice";
+
+						// Check for space or enter key press
+						if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+						{
+							ActionButton();
+						} //end if
 				        break;
                     } // end Case RollDice
                 
@@ -448,6 +468,37 @@ namespace GSP
 
                         // Update the value of allowed travel distance upon the player pressing a move button
                         guiDiceDistVal = guiMovement.RemainingTravelDistance;
+
+						// Check if arrow key is pressed, and move in that direction
+						if(Input.GetKey(KeyCode.LeftArrow) && movementCooldown <= Time.time && guiDiceDistVal > 0)
+						{
+							guiMovement.MoveLeft();
+							movementCooldown = Time.time + 0.3f;
+					    } //end if
+
+						if(Input.GetKey(KeyCode.RightArrow) && movementCooldown <= Time.time && guiDiceDistVal > 0)
+						{
+							guiMovement.MoveRight();
+							movementCooldown = Time.time + 0.3f;
+						} //end if
+
+						if(Input.GetKey(KeyCode.UpArrow) && movementCooldown <= Time.time && guiDiceDistVal > 0)
+						{
+							guiMovement.MoveUp();
+							movementCooldown = Time.time + 0.3f;
+						} //end if
+
+						if(Input.GetKey(KeyCode.DownArrow) && movementCooldown <= Time.time && guiDiceDistVal > 0)
+						{
+							guiMovement.MoveDown();
+							movementCooldown = Time.time + 0.3f;
+						} //end if
+
+						// End turn if space or enter is pressed
+						if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+						{
+							ActionButton();
+						} //end if
                         break;
                     } // end Case SelectPathToTake
                 
@@ -484,6 +535,45 @@ namespace GSP
 							Text eventText = GameObject.Find("EventText").GetComponent<Text>();
 							eventText.text = "Porter ally found.\nWould you like to add them?";
 						} //end if
+                        // If it's a market, send them to the market scene
+                        else if (mapEventResult.Contains("Market"))
+                        {
+                            // set the turn text
+                            guiTurnText.text = "You found a market!";
+
+                            // Check if the player is an AI
+                            if (isPlayerAI)
+                            {
+                                // Tell the AI it's at the market
+                                GetCurrentPlayer().GetComponent<Player>().IsAtMarket = true;
+                            } // end if
+                            
+                            // Save the players
+                            GameMaster.Instance.SavePlayers();
+
+                            // Save the resources
+                            GameMaster.Instance.SaveResources();
+
+                            // Finally, tell the GameMaster to load the end scene
+                            GameMaster.Instance.LoadLevel("Market");
+                        } // end else if
+                        // If it's a village, end the game for now
+                        else if (mapEventResult.Contains("Village"))
+                        {
+                            // set the turn text
+                            guiTurnText.text = "You found a village!";
+
+                            // Check if the player is an AI
+                            if (isPlayerAI)
+                            {
+                                // Tell the AI it's the end of the game
+                                GetCurrentPlayer().GetComponent<Player>().IsEnd = true;
+                            } // end if
+
+                            // Change the state to the EndGame state
+                            gamePlayState = GamePlayState.EndGame;
+                            break;
+                        } // end else if
 						else 
 				   		{
 							// Return the result for now
@@ -514,7 +604,24 @@ namespace GSP
                     
 						// Clear the board of any highlight tiles
                         Highlight.ClearHighlight();
-                        break;
+
+						// Accept or decline ally with key presses
+						if(Input.GetKeyDown(KeyCode.Alpha1) && mapEventResult.Contains("Ally"))
+						{
+							Yes ();
+						} //end if
+
+						if(Input.GetKeyDown(KeyCode.Alpha2) && mapEventResult.Contains("Ally"))
+						{
+							No ();
+						} //end if
+
+						// End turn if space or enter is pressed
+						if((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) && actionButton.IsInteractable())
+						{
+							ActionButton();
+						} //end if
+						break;
                     } // end Case EndTurn
                 
                 // Its the end of the game
@@ -971,6 +1078,37 @@ namespace GSP
                 actionButtonActive = true;
             } // end if
 		} //end No
+
+		// HUD Button - Shows/Hides HUD and pauses game
+		public void ToggleHUD()
+		{
+			GameObject.Find ("Canvas").SetActive (!GameObject.Find ("Canvas").activeSelf);
+			isPaused = !isPaused;
+		} //end ToggleHUD
+
+		// Music Slider - Changes volume of music Audio Source
+		public void AdjustMusic(float vol)
+		{
+			AudioManager.Instance.MusicVolume (vol);
+		} //end AdjustMusic
+
+		// SFX Slider - Changes volume of sfx Audio Source
+		public void AdjustSFX(float vol)
+		{
+			AudioManager.Instance.SFXVolume (vol);
+		} //end AdjustSFX
+
+		// Music Toggle - Mutes music Audio Source
+		public void MuteMusic()
+		{
+			AudioManager.Instance.MuteMusic ();
+		} //end MuteMusic
+
+		// SFX Toggle - Mutes SFX Audio Source
+		public void MuteSFX()
+		{
+			AudioManager.Instance.MuteSFX ();
+		} //end MuteSFX
 
         // Gets whether the movement class is initialised for the current player
         public bool IsMovementInitialized

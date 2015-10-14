@@ -40,6 +40,7 @@ namespace GSP
 		GameObject mapSet;					// Map selection panel
 		GameObject creditsSet;				// Credits panel
 		GameObject instructionsSet;			// Instructions panel
+		GameObject optionsSet;				// Options panel
         GameObject colorSet;                // Colors panel
 		GameObject charactersSet;			// Character selection panel
 		GameObject backButton;				// Back button
@@ -49,6 +50,7 @@ namespace GSP
 		bool isInstructionsDisplayed;		// Whether instructions are displayed or not
 		int  instructionsProgress;			// What slide the player is on
 		bool isCreditsDisplayed;			// Whether Credits are displayed or not
+		bool isOptionsDisplayed;			// Whether Options are displayed or not
 		string mapSelection;		        // Scene name of map
 		bool isMapsDisplayed;				// Whether selection maps are displayed or not
         bool isColorsDisplayed;				// Whether the colours are displayed or not
@@ -63,6 +65,7 @@ namespace GSP
 			menuState = MenuState.Home;						// Prevents triggers from occuring before called
 			isMenuDisplayed = true;							// Menu begins displayed
 			isCreditsDisplayed = false;						// Credits begins hidden
+			isOptionsDisplayed = false;						// Options begin hidden
 			isInstructionsDisplayed = false;				// Instructions begin hidden
 			instructionsProgress = 1;						// No progress made, prepare to show second slide
 			timeHolder = Time.time + 3.0f;					// Initialize first wait period
@@ -78,6 +81,7 @@ namespace GSP
             mapSet = GameObject.Find("MapSelection");
             creditsSet = GameObject.Find("Credits");
             instructionsSet = GameObject.Find("Instructions");
+			optionsSet = GameObject.Find ("Options");
             colorSet = GameObject.Find("Colours");
 			charactersSet = GameObject.Find ("Characters");
             backButton = GameObject.Find("BackButton");
@@ -88,6 +92,7 @@ namespace GSP
             DisableMapSelection();
             DisableInstructions();
             DisableCredits();
+			DisableOptions ();
             DisableColors();
 			DisableCharacters ();
             backButton.SetActive(false);
@@ -292,6 +297,22 @@ namespace GSP
 									} //end if
 									break;
 								} //end case Characters
+							// Options - Display audio options
+							case MenuState.Options:
+								{
+									// Hide menu if not cleared yet
+									if (isMenuDisplayed)
+									{
+										DisableMainMenu();
+									} // end if
+					
+									// Display options if not shown yet
+									if (!isOptionsDisplayed)
+									{
+										EnableOptions();
+									} // end if
+									break;
+								} //end case Options
                             // Credits - Display source citations
                             case MenuState.Credits:
                                 {
@@ -517,6 +538,20 @@ namespace GSP
 			isCreditsDisplayed = false;
 		} // end DisableCredits
 
+		// Enable the options screen
+		void EnableOptions()
+		{
+			optionsSet.SetActive (true);
+			isOptionsDisplayed = true;
+		} // end EnableOptions
+		
+		// Disable the options screen
+		void DisableOptions()
+		{
+			optionsSet.SetActive (false);
+			isOptionsDisplayed = false;
+		} // end DisableOptions
+
         // Enable the colours screen
         void EnableColors()
         {
@@ -581,6 +616,12 @@ namespace GSP
 			menuState = MenuState.Credits;
 		} // end Credits
 
+		// Options button
+		public void Options()
+		{
+			menuState = MenuState.Options;
+		} //end Options
+
         // Quit button
         public void QuitGame()
 		{
@@ -619,6 +660,11 @@ namespace GSP
 			{
 				DisableCharacters();
 				menuState = MenuState.Colors;
+			} //end else if
+			else if(menuState == MenuState.Options)
+			{
+				DisableOptions();
+				menuState = MenuState.Home;
 			} //end else if
 			else
 			{
@@ -676,6 +722,30 @@ namespace GSP
 		{
 			mapSelection = "area04";
 		} // end SnowMap
+
+		// Music mute toggle
+		public void MuteMusic()
+		{
+			AudioManager.Instance.MuteMusic ();
+		} //end MuteMusic
+
+		// Music volume slider
+		public void AdjustMusic(float vol)
+		{
+			AudioManager.Instance.MusicVolume (vol);
+		} //end AdjustMusic
+
+		// SFX mute toggle
+		public void MuteSFX()
+		{
+			AudioManager.Instance.MuteSFX ();
+		} //end MuteSFX
+
+		// SFX volume slider
+		public void AdjustSFX(float vol)
+		{
+			AudioManager.Instance.SFXVolume (vol);
+		} //end AdjustSFX
 
         // Colours continue button
         public void ColorsContinue()
