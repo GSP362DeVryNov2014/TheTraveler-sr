@@ -22,6 +22,7 @@ namespace GSP.Items
         Broadsword,
         Mace,
         Spear,
+        Battleaxe,
         Size
     } // end WeaponType
 } // end GSP.Items

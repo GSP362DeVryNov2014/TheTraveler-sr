@@ -48,8 +48,8 @@ namespace GSP
         // This is the reference to the chainmail sprite
         public static Sprite spriteChainmail = armorSpriteSheet[15];
 
-        // This is the reference to the fullsuit sprite
-        public static Sprite spriteFullsuit = armorSpriteSheet[19];
+        // This is the reference to the plate fullsuit sprite
+        public static Sprite spritePlateFullsuit = armorSpriteSheet[19];
 
         // This is the reference to the platebody sprite
         public static Sprite spritePlatebody = armorSpriteSheet[20];
@@ -63,6 +63,30 @@ namespace GSP
         // This is the reference to the sachel sprite
         public static Sprite spriteSachel = itemsSpriteSheet[49];
 
+        // This is the reference to the robe sprite
+        public static Sprite spriteRobe = armorSpriteSheet[5];
+
+        // This is the reference to the skirt sprite
+        public static Sprite spriteSkirt = armorSpriteSheet[7];
+        
+        // This is the reference to the cloth fullsuit sprite
+        public static Sprite spriteClothFullsuit = armorSpriteSheet[4];
+
+        // This is the reference to the tunic sprite
+        public static Sprite spriteTunic = armorSpriteSheet[10];
+
+        // This is the reference to the leggings sprite
+        public static Sprite spriteLeggings = armorSpriteSheet[12];
+
+        // This is the reference to the leather fullsuit sprite
+        public static Sprite spriteLeatherFullsuit = armorSpriteSheet[9];
+
+        // This is the reference to the chain fullsuit sprite
+        public static Sprite spriteChainFullsuit = armorSpriteSheet[14];
+
+        // This is the reference to the sachel sprite
+        public static Sprite spriteBattleaxe = itemsSpriteSheet[26];
+        
         // This is the reference to the fish resource sprite
         public static Sprite spriteFishResource = resourcesSpriteSheet[7];
 

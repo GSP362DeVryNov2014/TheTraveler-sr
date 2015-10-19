@@ -41,8 +41,17 @@ namespace GSP.Core
             lookAheadReturnSpeed = 2.5f;
             lookAheadMoveThreshold = 0.1f;
 
-            // Set the X-axis offset
-            offsetX = 7.3f;
+            // Check what map we are on
+            if (Application.loadedLevelName == "area01" || Application.loadedLevelName == "area02")
+            {
+                // Set the X-axis offset
+                offsetX = 7.3f;
+            } // end if
+            else if (Application.loadedLevelName == "area03" || Application.loadedLevelName == "area04")
+            {
+                // Set the X-axis offset
+                offsetX = 3.8f;
+            } // end else if
 
             // Make sure we are not a child
             transform.parent = null;

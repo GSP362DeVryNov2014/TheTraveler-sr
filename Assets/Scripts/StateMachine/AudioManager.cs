@@ -71,20 +71,40 @@ namespace GSP
 			musicSource.mute = !musicSource.mute; 
 		} //end MuteMusic
 
+		public bool IsMusicMuted()
+		{
+			return musicSource.mute;
+		} //end IsMusicMuted
+
 		public void MuteSFX()
 		{
 			sfxSource.mute = !sfxSource.mute;
 		} //end MuteSFX
+
+		public bool IsSFXMuted()
+		{
+			return sfxSource.mute;
+		} //end IsMusicMuted
 
 		public void MusicVolume(float vol)
 		{
 			musicSource.volume = vol;
 		} //end MusicVolume
 
+		public float MusicLevel()
+		{
+			return musicSource.volume;
+		} //end MusicLevel
+
 		public void SFXVolume(float vol)
 		{
 			sfxSource.volume = vol;
 		} //end SFXVolume
+
+		public float SFXLevel()
+		{
+			return sfxSource.volume;
+		} //end SFXLevel
 
         // SFX clip functions
 		// Sets a single passed clip to a source clip and plays it

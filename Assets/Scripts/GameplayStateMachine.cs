@@ -60,6 +60,10 @@ namespace GSP
         bool isPlayerAI;                            // Whether the player is an AI
 
 		// HUD Elements
+		GameObject CurrentPlayer;					// CurrentPlayer panel
+		GameObject AllPlayers;						// AllPlayers panel
+		GameObject BKG;								// Canvas Background
+		bool HUDToggle;								// Whether HUD is displayed or not
         // Current Player
 		Text guiPlayerName;							// Name of current player
 		Text guiTurnText; 			       			// The turn or event currently happening
@@ -71,6 +75,7 @@ namespace GSP
 		GameObject acceptPanel;						// Panel for accepting an ally
 		GameObject pauseMenu;						// Panel for pausing game
 		GameObject instructionsSet;					// Panel that displays instructions
+		GameObject audioSet;						// Panel that displays audio options
 		int instructionsProgress;					// What slide should instructions show
 		bool isPaused;								// Whether the game is paused or not
 		// All Players
@@ -101,6 +106,9 @@ namespace GSP
             tileManager.GenerateMap();
 
 			// Get HUD elements
+			CurrentPlayer = GameObject.Find ("Canvas/CurrentPlayer");
+			AllPlayers = GameObject.Find("Canvas/AllPlayers");
+			BKG = GameObject.Find ("Canvas/Background");
             guiPlayerName = GameObject.Find("CurrentPlayer/PlayerNamePanel/PlayerName").GetComponent<Text>();
             guiTurnText = GameObject.Find("CurrentPlayer/TurnPhasePanel/TurnPhase").GetComponent<Text>();
             guiGold = GameObject.Find("CurrentPlayer/WeightGold/Gold").GetComponent<Text>();
@@ -110,6 +118,7 @@ namespace GSP
 			acceptPanel = GameObject.Find("Accept");
 			pauseMenu = GameObject.Find ("PauseMenu");
 			instructionsSet = GameObject.Find ("Instructions");
+			audioSet = GameObject.Find ("Options");
             imageParent = GameObject.Find("AllPlayers/ImageOrganizer");
             textParent = GameObject.Find("AllPlayers/TextOrganizer");
             inventory = GameObject.Find("PlayerInventory").GetComponent<PlayerInventory>();
@@ -117,6 +126,7 @@ namespace GSP
             recycleInventory = GameObject.Find("RecycleBin").GetComponent<RecycleBin>();
             allyTable = GameObject.Find("Allies").GetComponent<AllyTable>();
 			GameObject.Find ("Canvas").transform.Find ("Instructions").gameObject.SetActive (false);
+			HUDToggle = true;
 			actionButtonActive = true;
 			isPaused = false;
 			instructionsProgress = 1;
@@ -124,6 +134,7 @@ namespace GSP
             // Disable the other panels by default
             acceptPanel.SetActive(false);
 			pauseMenu.SetActive (false);
+			audioSet.SetActive (false);
             inventory.gameObject.SetActive(false);
             allyInventory.gameObject.SetActive(false);
             recycleInventory.gameObject.SetActive(false);
@@ -208,6 +219,22 @@ namespace GSP
 
             // Change the interface element's colours
             ChangeColor();
+
+			// Restore audio options
+			audioSet.SetActive (true);
+			if(AudioManager.Instance.IsMusicMuted ())
+			{
+				GameObject.Find ("MusicToggle").GetComponent<Toggle> ().isOn = true;
+				AudioManager.Instance.MuteMusic();
+			} //end if
+			if(AudioManager.Instance.IsSFXMuted())
+			{
+				GameObject.Find ("SFXToggle").GetComponent<Toggle> ().isOn = true;
+				AudioManager.Instance.MuteSFX();
+			} // end if
+			GameObject.Find ("MusicSlider").GetComponent<Slider> ().value = AudioManager.Instance.MusicLevel ();
+			GameObject.Find ("SFXSlider").GetComponent<Slider> ().value = AudioManager.Instance.SFXLevel ();
+			audioSet.SetActive (false);
 		} // end InitAfterStart
 
         // Adds the players to the game
@@ -218,6 +245,29 @@ namespace GSP
             {
                 // Create the players
                 GameMaster.Instance.CreatePlayers();
+
+                // Set the player's max weights depending upon the map
+                for (int index = 0; index < GameMaster.Instance.NumPlayers; index++)
+                {
+                    // Check if the map is the desert
+                    if (GameMaster.Instance.BattleMap == BattleMap.area01)
+                    {
+                        // Set the player's max weight to one hundred twenty
+                        ((Merchant)GameMaster.Instance.GetPlayerScript(index).Entity).MaxWeight = 120;
+                    } // end if
+                    // Check if the map is the euro
+                    else if (GameMaster.Instance.BattleMap == BattleMap.area02)
+                    {
+                        // Set the player's max weight to sixty
+                        ((Merchant)GameMaster.Instance.GetPlayerScript(index).Entity).MaxWeight = 60;
+                    } // end else if
+                    // Otherwise check if the map is the metro or snowy
+                    else if (GameMaster.Instance.BattleMap == BattleMap.area03 || GameMaster.Instance.BattleMap == BattleMap.area04)
+                    {
+                        // Set the player's max weight to eighty
+                        ((Merchant)GameMaster.Instance.GetPlayerScript(index).Entity).MaxWeight = 80;
+                    } // end else if
+                } // end for
             } // end if
             else
             {
@@ -311,6 +361,12 @@ namespace GSP
         // Updates the state machine and things; runs every frame
         void Update()
         {
+			// Allow player to toggle HUD
+			if(Input.GetKeyDown(KeyCode.H))
+			{
+				ToggleHUD();
+			} //end if
+
             // This was set to true at the end of Start()
             if (canInitAfterStart)
             {
@@ -1003,6 +1059,12 @@ namespace GSP
 			instructionsProgress = 1;
 		} //end Instructions
 
+		// Audio button - Displays audio panel
+		public void Audio()
+		{
+			audioSet.SetActive (!audioSet.activeInHierarchy);
+		} //end Audio
+
 		// Continue button - goes through instruction slides
 		public void Continue()
 		{
@@ -1082,8 +1144,33 @@ namespace GSP
 		// HUD Button - Shows/Hides HUD and pauses game
 		public void ToggleHUD()
 		{
-			GameObject.Find ("Canvas").SetActive (!GameObject.Find ("Canvas").activeSelf);
-			isPaused = !isPaused;
+			// If HUD is displayed, reposition it
+			if(HUDToggle)
+			{
+				HUDToggle = false;
+				// Turn off menu if active
+				if(isPaused)
+				{
+					PauseGame();
+				} //end if
+				isPaused = true;
+				// Turn off current player
+				CurrentPlayer.SetActive(false);
+				// Turn off all players
+				AllPlayers.SetActive(false);
+				// Turn off background
+				BKG.SetActive(false);
+
+			} // end if HUDToggle
+			else
+			{
+				HUDToggle = true;
+				CurrentPlayer.SetActive(true);
+				AllPlayers.SetActive(true);
+				BKG.SetActive(true);
+				isPaused = false;
+			} //end else !HUDToggle
+
 		} //end ToggleHUD
 
 		// Music Slider - Changes volume of music Audio Source

@@ -99,6 +99,20 @@ namespace GSP
             continueButton.SetActive(false);
             guideText.gameObject.SetActive(false);
 
+			// Set audio to active
+			if(AudioManager.Instance.IsMusicMuted())
+			{
+				AudioManager.Instance.MuteMusic();
+			} //end if
+
+			if (AudioManager.Instance.IsSFXMuted ())
+			{
+				AudioManager.Instance.MuteSFX();
+			} //end if
+
+			AudioManager.Instance.MusicVolume (1.0f);
+			AudioManager.Instance.SFXVolume (1.0f);
+
             // Initialise the GameMaster in the menu
             // Note: Don't remove this
             if (GameMaster.Instance != null) {/* Leave this empty. :P */}
@@ -726,25 +740,37 @@ namespace GSP
 		// Music mute toggle
 		public void MuteMusic()
 		{
-			AudioManager.Instance.MuteMusic ();
+            if (Application.isPlaying)
+            {
+                AudioManager.Instance.MuteMusic();
+            } // end if
 		} //end MuteMusic
 
 		// Music volume slider
 		public void AdjustMusic(float vol)
 		{
-			AudioManager.Instance.MusicVolume (vol);
+			if (Application.isPlaying)
+            {
+                AudioManager.Instance.MusicVolume(vol);
+            } // end if
 		} //end AdjustMusic
 
 		// SFX mute toggle
 		public void MuteSFX()
 		{
-			AudioManager.Instance.MuteSFX ();
+            if (Application.isPlaying)
+            {
+                AudioManager.Instance.MuteSFX();
+            } // end if
 		} //end MuteSFX
 
 		// SFX volume slider
 		public void AdjustSFX(float vol)
 		{
-			AudioManager.Instance.SFXVolume (vol);
+            if (Application.isPlaying)
+            {
+                AudioManager.Instance.SFXVolume(vol);
+            } // end if
 		} //end AdjustSFX
 
         // Colours continue button
