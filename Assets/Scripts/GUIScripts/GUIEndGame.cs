@@ -50,9 +50,6 @@ namespace GSP
             rankings = GameObject.Find("Canvas").transform.Find("RankingTable").gameObject;
             toggleButton = GameObject.Find("Canvas").transform.Find("ButtonPanel/ToggleHighScore").gameObject;
 
-            // Play the winning sound
-            AudioManager.Instance.PlayVictory();
-
             // Create the rank table instance
             RankTable rankTable = new RankTable();
             // Get the sorted list
@@ -92,9 +89,45 @@ namespace GSP
 
                 // Show the high scores table
                 highScores.SetActive(true);
+
+				// Play sound based on whether player won, drew, or lost
+				if(winningPlayer == 0)
+				{
+					// Play the winning sound
+					AudioManager.Instance.PlayVictory();
+				} // end if
+				else 
+				{
+					// Get opponent merchant
+					Merchant opponentMerchant = (Merchant)GameMaster.Instance.GetPlayerScript(1).Entity;
+
+					// Check if draw or loss
+					if(playerMerchant.Currency == opponentMerchant.Currency)
+					{
+						AudioManager.Instance.PlayDraw();
+					} // end if
+					else
+					{
+						AudioManager.Instance.PlayLoss();
+					} // end else playerMerchant.Currency != opponentMerchant.Currency
+				} // end else winningPlayer != 0
             } // end if
             else
             {
+				// Determine the correct sound
+				Merchant firstPlayer = (Merchant)GameMaster.Instance.GetPlayerScript(winningPlayer).Entity;
+				Merchant secondPlayer = (Merchant)GameMaster.Instance.GetPlayerScript(rankTable.Currencies[1].Key).Entity;
+
+				if(firstPlayer.Currency == secondPlayer.Currency)
+				{
+					AudioManager.Instance.PlayDraw();
+				} // end if
+				else
+				{
+					// Play the winning sound
+					AudioManager.Instance.PlayVictory();
+				} // end if
+
                 // Show the ranking table
                 rankings.SetActive(true);
 
@@ -114,16 +147,6 @@ namespace GSP
                 // Tell the GameMaster to change to the cake scene!
                 GameMaster.Instance.LoadLevel("cake");
             } // end if
-            
-            if(Input.GetKeyDown(KeyCode.D))
-			{
-				AudioManager.Instance.PlayDraw();
-			} // end if
-
-			if(Input.GetKeyDown(KeyCode.L))
-			{
-				AudioManager.Instance.PlayLoss();
-			} // end if
 		} // end Update
 
         // Goes back to the menu

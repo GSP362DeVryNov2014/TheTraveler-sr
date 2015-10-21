@@ -165,9 +165,6 @@ namespace GSP
 			// Create a die
 			die = new Die();
 
-            // Reseed the random number generator
-            die.Reseed(Environment.TickCount);
-
 			// Get movement and map event components
 			guiMovement = GameObject.Find("Canvas").GetComponent<GUIMovement> ();
 			guiMapEvent = GameObject.Find("Canvas").GetComponent<MapEvent> ();
@@ -185,6 +182,9 @@ namespace GSP
 		// Initialises things after the Start() function runs
         void InitAfterStart()
 		{
+            // Reseed the random number generator
+            die.Reseed(Environment.TickCount);
+            
             // Add the player instances
             AddPlayers(guiNumOfPlayers);
             
@@ -317,7 +317,7 @@ namespace GSP
                     // Get the starting items; could use indices, but this way is future proof from moving the items around
                     // in the database
                     Item weapon = ItemDatabase.Instance.Items.Find(item => item.Type == WeaponType.Sword.ToString());
-                    Item legs = ItemDatabase.Instance.Items.Find(item => item.Type == ArmorType.Chainlegs.ToString());
+                    Item legs = ItemDatabase.Instance.Items.Find(item => item.Type == ArmorType.Skirt.ToString());
 
                     // Add the items to the player's inventory
                     inventory.AddItem(0, count, weapon.Id, SlotType.Inventory);
@@ -361,12 +361,6 @@ namespace GSP
         // Updates the state machine and things; runs every frame
         void Update()
         {
-			// Allow player to toggle HUD
-			if(Input.GetKeyDown(KeyCode.H))
-			{
-				ToggleHUD();
-			} //end if
-
             // This was set to true at the end of Start()
             if (canInitAfterStart)
             {
@@ -377,37 +371,46 @@ namespace GSP
                 InitAfterStart();
             } // end if
 			// Run State Machine only if not paused
-            else if(!isPaused)
+            else
             {
-                // Update any values that affect GUI before creating GUI
-				// Mute
-				if(Input.GetKeyDown(KeyCode.M))
+				// Allow player to toggle HUD
+				if(Input.GetKeyDown(KeyCode.H))
 				{
-					AudioManager.Instance.MuteMusic();
-					AudioManager.Instance.MuteSFX();
+					ToggleHUD();
 				} //end if
-
-				// Pause
-				if(Input.GetKeyDown(KeyCode.P))
+				
+				// Allow player to pause game
+				if(Input.GetKeyDown(KeyCode.P) && HUDToggle)
 				{
 					PauseGame();
 				} //end if
 
-				// Inventory
-				if(Input.GetKeyDown(KeyCode.I))
+				if(!isPaused)
 				{
-					ShowInventory();
-				} //end if
+                	// Update any values that affect GUI before creating GUI
+					// Mute
+					if(Input.GetKeyDown(KeyCode.M))
+					{
+						AudioManager.Instance.MuteMusic();
+						AudioManager.Instance.MuteSFX();
+					} //end if M key
 
-				// Allies
-				if(Input.GetKeyDown(KeyCode.A))
-				{
-					ShowAllies ();
-				} //end if
+					// Inventory
+					if(Input.GetKeyDown(KeyCode.I))
+					{
+						ShowInventory();
+					} //end if I key
 
-				// Run StateMachine
-                StateMachine();
-            } // end else if
+					// Allies
+					if(Input.GetKeyDown(KeyCode.A))
+					{
+						ShowAllies ();
+					} //end if A key
+
+					// Run StateMachine
+                	StateMachine();
+				} //end if !isPaused
+            } // end else
         } // end Update
 
         // Controls the flow of the game through various states
@@ -478,7 +481,7 @@ namespace GSP
                         guiTurnText.text = "Calculating distance...";
 
                         // Get the dice's value and calculate the allowed movement
-                        guiDiceDistVal = guiDiceDistVal * (guiMaxWeight - guiCurrentWeight) / guiMaxWeight;
+                        guiDiceDistVal = 1 + guiDiceDistVal * (guiMaxWeight - guiCurrentWeight) / guiMaxWeight;
 
                         // Change the state to the DisplayDistance state
                         gamePlayState = GamePlayState.DisplayDistance;

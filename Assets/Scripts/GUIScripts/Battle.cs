@@ -181,6 +181,11 @@ namespace GSP
 				{
 					Feint();
 				} //end if 3 key
+				if(Input.GetKeyDown(KeyCode.M))
+				{
+					AudioManager.Instance.MuteMusic();
+					AudioManager.Instance.MuteSFX();
+				} //end if M key
 			} //end if playerTurn && !IsAI
 		} //end Update
 
@@ -294,6 +299,9 @@ namespace GSP
 				fightBoxText.transform.position = new Vector3(
 					fightBoxText.transform.position.x,
 					fightBoxText.transform.position.y + 26);
+
+                // Give the player five gold for winning
+                playerMerchant.Currency += 5;
 
 				// Return to game after 3 seconds
 				playerTurn = false;

@@ -42,16 +42,16 @@ namespace GSP.Core
             lookAheadMoveThreshold = 0.1f;
 
             // Check what map we are on
-            if (Application.loadedLevelName == "area01" || Application.loadedLevelName == "area02")
+            if (Application.loadedLevelName == "area01")
             {
                 // Set the X-axis offset
                 offsetX = 7.3f;
             } // end if
-            else if (Application.loadedLevelName == "area03" || Application.loadedLevelName == "area04")
+            else
             {
-                // Set the X-axis offset
+                // Otherwise set the X-axis offset of the zoomed camera
                 offsetX = 3.8f;
-            } // end else if
+            } // end else
 
             // Make sure we are not a child
             transform.parent = null;
