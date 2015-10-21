@@ -325,7 +325,7 @@ namespace GSP.Char
         {
             // Obtain a reference to the scene's TileManager
             TileManager tileManager = GameObject.Find("TileManager").GetComponent<TileManager>();
-            
+
             // Check if a target has been chosen
             if (merchant.Target == Vector3.zero)
             {
@@ -344,8 +344,8 @@ namespace GSP.Char
                 {
                     // Attempt to get a resource target; otherwise get the proper market target
                     GetResourceTarget(tileManager);
-                } //end else
-            } //end else
+                } //end inner else
+            } //end outer else
         } //end SetTarget
 
         // Gets a resource target if possible
@@ -369,11 +369,15 @@ namespace GSP.Char
                 Resource resource = (Resource)ItemDatabase.Instance.Items.Find(tempItem =>
                     tempItem.Type == resourceType.ToString());
 
-                // If the value is higher than current target, replace it as the new target
-                if (resourceValue < resource.Worth)
+                // Check if the AI can carry the resource
+                if (((Merchant)Entity).TotalWeight + resource.Weight <= ((Merchant)Entity).MaxWeight)
                 {
-                    merchant.Target = hitColliders[index].transform.position;
-                    resourceValue = resource.Worth;
+                    // If the value is higher than current target, replace it as the new target
+                    if (resourceValue < resource.Worth)
+                    {
+                        merchant.Target = hitColliders[index].transform.position;
+                        resourceValue = resource.Worth;
+                    } // end if resourceValue < resource.Worth
                 } // end if
             } //end for
 

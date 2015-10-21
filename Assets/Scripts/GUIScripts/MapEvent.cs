@@ -50,9 +50,9 @@ namespace GSP
 		//NOTE: These should add up to less than 100 so that 
 		//there is a chance nothing occurs. Minimum chance of
 		//one or else there will be problems
-        int enemyChance = 25;   // The minimum chance for the MapEvent to an enemy
-        int allyChance = 55;    // The minimum chance for the MapEvent to an ally
-        int itemChance = 15;    // The minimum chance for the MapEvent to an item
+        int enemyChance = 35;   // The minimum chance for the MapEvent to an enemy
+        int allyChance = 20;    // The minimum chance for the MapEvent to an ally
+        int itemChance = 25;    // The minimum chance for the MapEvent to an item
 		
 		string guiResult; // The MapEvent summary
 
@@ -121,11 +121,17 @@ namespace GSP
                     // Get the resource from the database
                     Item temp = ItemDatabase.Instance.Items.Find(resource => resource.Type == resourceTileType.ToString());
 
-                    // Pick up the resource
-                    playerMerchant.PickupResource((Resource)temp, 1);
-
-                    // Declare what was landed on
-                    guiResult = "You got a resource:\n" + temp.Name;
+                    // Attempt to pick up the resource
+                    if (playerMerchant.PickupResource((Resource)temp, 1))
+                    {
+                        // Declare what was landed on
+                        guiResult = "You got a resource:\n" + temp.Name;
+                    } // end if
+                    else
+                    {
+                        // Otherwise, there is no space for the resource or it's too heavy
+                        guiResult = "Unable to pickup the \n" + temp.Name;
+                    } // end else
 
                     // Play found for what was landed on
                     if (temp.Name == "Fish")
