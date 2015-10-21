@@ -165,9 +165,6 @@ namespace GSP
 			// Create a die
 			die = new Die();
 
-            // Reseed the random number generator
-            die.Reseed(Environment.TickCount);
-
 			// Get movement and map event components
 			guiMovement = GameObject.Find("Canvas").GetComponent<GUIMovement> ();
 			guiMapEvent = GameObject.Find("Canvas").GetComponent<MapEvent> ();
@@ -185,6 +182,9 @@ namespace GSP
 		// Initialises things after the Start() function runs
         void InitAfterStart()
 		{
+            // Reseed the random number generator
+            die.Reseed(Environment.TickCount);
+            
             // Add the player instances
             AddPlayers(guiNumOfPlayers);
             
@@ -380,7 +380,7 @@ namespace GSP
 				} //end if
 				
 				// Allow player to pause game
-				if(Input.GetKeyDown(KeyCode.P))
+				if(Input.GetKeyDown(KeyCode.P) && HUDToggle)
 				{
 					PauseGame();
 				} //end if

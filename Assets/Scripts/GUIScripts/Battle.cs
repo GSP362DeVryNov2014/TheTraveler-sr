@@ -300,6 +300,9 @@ namespace GSP
 					fightBoxText.transform.position.x,
 					fightBoxText.transform.position.y + 26);
 
+                // Give the player five gold for winning
+                playerMerchant.Currency += 5;
+
 				// Return to game after 3 seconds
 				playerTurn = false;
 				Invoke ("EndFight", 3.0f);
