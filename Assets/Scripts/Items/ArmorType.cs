@@ -22,7 +22,14 @@ namespace GSP.Items
         Chainmail,
         Platelegs,
         Chainlegs,
-        Fullsuit,
+        PlateFullsuit,
+        Robe,
+        Skirt,
+        ClothFullsuit,
+        Tunic,
+        Leggings,
+        LeatherFullsuit,
+        ChainFullSuit,
         Size
     } // end ArmorType
 } // end GSP.Items

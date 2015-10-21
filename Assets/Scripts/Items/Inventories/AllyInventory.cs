@@ -16,7 +16,6 @@ using UnityEngine.UI;
 
 namespace GSP.Items.Inventories
 {
-    //TODO: Turn this from player to ally inventory
     /*******************************************************************************
      *
      * Name: AllyInventory

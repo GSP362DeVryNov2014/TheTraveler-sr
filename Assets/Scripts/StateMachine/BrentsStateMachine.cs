@@ -40,7 +40,9 @@ namespace GSP
 		GameObject mapSet;					// Map selection panel
 		GameObject creditsSet;				// Credits panel
 		GameObject instructionsSet;			// Instructions panel
-        GameObject colorSet;                // Colours panel
+		GameObject optionsSet;				// Options panel
+        GameObject colorSet;                // Colors panel
+		GameObject charactersSet;			// Character selection panel
 		GameObject backButton;				// Back button
         GameObject continueButton;          // Continue button for the colours
 		Text 	   guideText;				// Map selection text
@@ -48,10 +50,13 @@ namespace GSP
 		bool isInstructionsDisplayed;		// Whether instructions are displayed or not
 		int  instructionsProgress;			// What slide the player is on
 		bool isCreditsDisplayed;			// Whether Credits are displayed or not
+		bool isOptionsDisplayed;			// Whether Options are displayed or not
 		string mapSelection;		        // Scene name of map
 		bool isMapsDisplayed;				// Whether selection maps are displayed or not
         bool isColorsDisplayed;				// Whether the colours are displayed or not
-		
+		bool isCharactersDisplayed;			// Whether the character selection is displayed or not
+		int playerSpriteNum;				// What player pushed the sprite selection button
+
 		// Initialize variables
 		void Start()
 		{
@@ -60,12 +65,15 @@ namespace GSP
 			menuState = MenuState.Home;						// Prevents triggers from occuring before called
 			isMenuDisplayed = true;							// Menu begins displayed
 			isCreditsDisplayed = false;						// Credits begins hidden
+			isOptionsDisplayed = false;						// Options begin hidden
 			isInstructionsDisplayed = false;				// Instructions begin hidden
 			instructionsProgress = 1;						// No progress made, prepare to show second slide
 			timeHolder = Time.time + 3.0f;					// Initialize first wait period
 			mapSelection = "nothing";						// Nothing has been chosen yet
 			isMapsDisplayed = false;						// Map selection begins hidden
             isColorsDisplayed = false;						// Colours begins hidden
+			isCharactersDisplayed = false;					// Character selection begins hidden
+			playerSpriteNum = -1;							// Initialize to -1 as no player has pushed it
 
 			// Obtain references to hierarchy panels and objects
             introSet = GameObject.Find("Intro");
@@ -73,7 +81,9 @@ namespace GSP
             mapSet = GameObject.Find("MapSelection");
             creditsSet = GameObject.Find("Credits");
             instructionsSet = GameObject.Find("Instructions");
+			optionsSet = GameObject.Find ("Options");
             colorSet = GameObject.Find("Colours");
+			charactersSet = GameObject.Find ("Characters");
             backButton = GameObject.Find("BackButton");
             continueButton = GameObject.Find("ColorsContinue");
             guideText = GameObject.Find("GuideText").GetComponent<Text>();
@@ -82,10 +92,26 @@ namespace GSP
             DisableMapSelection();
             DisableInstructions();
             DisableCredits();
+			DisableOptions ();
             DisableColors();
+			DisableCharacters ();
             backButton.SetActive(false);
             continueButton.SetActive(false);
             guideText.gameObject.SetActive(false);
+
+			// Set audio to active
+			if(AudioManager.Instance.IsMusicMuted())
+			{
+				AudioManager.Instance.MuteMusic();
+			} //end if
+
+			if (AudioManager.Instance.IsSFXMuted ())
+			{
+				AudioManager.Instance.MuteSFX();
+			} //end if
+
+			AudioManager.Instance.MusicVolume (1.0f);
+			AudioManager.Instance.SFXVolume (1.0f);
 
             // Initialise the GameMaster in the menu
             // Note: Don't remove this
@@ -269,7 +295,39 @@ namespace GSP
                                     } // end if
                                     break;
                                 } // end case Colors
-                            // Credits - Display names and instructions
+							// Characters - Display the character selections
+							case MenuState.Characters:
+								{
+									// Hide colors if not cleared yet
+									if(isColorsDisplayed)
+									{
+										DisableColors();
+									} //end if
+
+									// Display characters if not shown yet
+									if(!isCharactersDisplayed)
+									{
+										EnableCharacters();
+									} //end if
+									break;
+								} //end case Characters
+							// Options - Display audio options
+							case MenuState.Options:
+								{
+									// Hide menu if not cleared yet
+									if (isMenuDisplayed)
+									{
+										DisableMainMenu();
+									} // end if
+					
+									// Display options if not shown yet
+									if (!isOptionsDisplayed)
+									{
+										EnableOptions();
+									} // end if
+									break;
+								} //end case Options
+                            // Credits - Display source citations
                             case MenuState.Credits:
                                 {
                                     // Hide menu if not cleared yet
@@ -277,7 +335,8 @@ namespace GSP
                                     {
                                         DisableMainMenu();
                                     } // end if
-
+								
+									// Display credits if not shown yet
                                     if (!isCreditsDisplayed)
                                     {
                                         EnableCredits();
@@ -493,6 +552,20 @@ namespace GSP
 			isCreditsDisplayed = false;
 		} // end DisableCredits
 
+		// Enable the options screen
+		void EnableOptions()
+		{
+			optionsSet.SetActive (true);
+			isOptionsDisplayed = true;
+		} // end EnableOptions
+		
+		// Disable the options screen
+		void DisableOptions()
+		{
+			optionsSet.SetActive (false);
+			isOptionsDisplayed = false;
+		} // end DisableOptions
+
         // Enable the colours screen
         void EnableColors()
         {
@@ -513,6 +586,24 @@ namespace GSP
             colorSet.transform.GetChild(2).gameObject.SetActive(false);
             colorSet.transform.GetChild(3).gameObject.SetActive(false);
         } // end DisableColors
+
+		// Enable the characters screen
+		void EnableCharacters()
+		{
+			charactersSet.SetActive (true);
+			guideText.gameObject.SetActive (true);
+			guideText.text = "Choose a character.";
+			isCharactersDisplayed = true;
+		} //end EnableCharacters
+
+		// Disable the characters screen
+		void DisableCharacters()
+		{
+			charactersSet.SetActive (false);
+			guideText.gameObject.SetActive (false);
+			isCharactersDisplayed = false;
+			playerSpriteNum = -1;
+		} //end Disable Characters
 
 		// Menu Button functions
         // Solo button
@@ -538,6 +629,12 @@ namespace GSP
 		{
 			menuState = MenuState.Credits;
 		} // end Credits
+
+		// Options button
+		public void Options()
+		{
+			menuState = MenuState.Options;
+		} //end Options
 
         // Quit button
         public void QuitGame()
@@ -573,6 +670,16 @@ namespace GSP
                 GameMaster.Instance.NumPlayers = 0;
                 menuState = MenuState.Home;
             } // end else if
+			else if(menuState == MenuState.Characters)
+			{
+				DisableCharacters();
+				menuState = MenuState.Colors;
+			} //end else if
+			else if(menuState == MenuState.Options)
+			{
+				DisableOptions();
+				menuState = MenuState.Home;
+			} //end else if
 			else
 			{
 				menuState = MenuState.Home;
@@ -630,18 +737,55 @@ namespace GSP
 			mapSelection = "area04";
 		} // end SnowMap
 
+		// Music mute toggle
+		public void MuteMusic()
+		{
+            if (Application.isPlaying)
+            {
+                AudioManager.Instance.MuteMusic();
+            } // end if
+		} //end MuteMusic
+
+		// Music volume slider
+		public void AdjustMusic(float vol)
+		{
+			if (Application.isPlaying)
+            {
+                AudioManager.Instance.MusicVolume(vol);
+            } // end if
+		} //end AdjustMusic
+
+		// SFX mute toggle
+		public void MuteSFX()
+		{
+            if (Application.isPlaying)
+            {
+                AudioManager.Instance.MuteSFX();
+            } // end if
+		} //end MuteSFX
+
+		// SFX volume slider
+		public void AdjustSFX(float vol)
+		{
+            if (Application.isPlaying)
+            {
+                AudioManager.Instance.SFXVolume(vol);
+            } // end if
+		} //end AdjustSFX
+
         // Colours continue button
         public void ColorsContinue()
         {
             // Get the input fields
-            InputField playerOneInput = colorSet.transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<InputField>();
-            InputField playerTwoInput = colorSet.transform.GetChild(1).GetChild(0).GetChild(1).GetComponent<InputField>();
-            InputField playerThreeInput = colorSet.transform.GetChild(2).GetChild(0).GetChild(1).GetComponent<InputField>();
-            InputField playerFourInput = colorSet.transform.GetChild(3).GetChild(0).GetChild(1).GetComponent<InputField>();
+            InputField playerOneInput = colorSet.transform.GetChild(0).GetChild(0).GetChild(2).GetComponent<InputField>();
+            InputField playerTwoInput = colorSet.transform.GetChild(1).GetChild(0).GetChild(2).GetComponent<InputField>();
+            InputField playerThreeInput = colorSet.transform.GetChild(2).GetChild(0).GetChild(2).GetComponent<InputField>();
+            InputField playerFourInput = colorSet.transform.GetChild(3).GetChild(0).GetChild(2).GetComponent<InputField>();
             
             // Get the names trimmed of any whitespace
             // Player 1
-            string playerOneName = playerOneInput.text.Trim();
+            // Name
+			string playerOneName = playerOneInput.text.Trim();
             if (!string.IsNullOrEmpty(playerOneName))
             {
                 // Player 1's name isn't empty so set it
@@ -653,7 +797,14 @@ namespace GSP
                 GameMaster.Instance.SetPlayerName(0, "Player 1");
             } // end else
 
+			// Sprite
+			if(GameMaster.Instance.GetPlayerSprite(0) == -1)
+			{
+				GameMaster.Instance.SetPlayerSprite(0, 1);
+			} //end if
+
             // Player 2
+			// Name
             string playerTwoName = playerTwoInput.text.Trim();
             if (!string.IsNullOrEmpty(playerTwoName))
             {
@@ -666,8 +817,15 @@ namespace GSP
                 GameMaster.Instance.SetPlayerName(1, "Player 2");
             } // end else
 
+			// Sprite
+			if(GameMaster.Instance.GetPlayerSprite(1) == -1)
+			{
+				GameMaster.Instance.SetPlayerSprite(1, 2);
+			} //end if
+
             // Player 3
-            string playerThreeName = playerThreeInput.text.Trim();
+            // Name
+			string playerThreeName = playerThreeInput.text.Trim();
             if (!string.IsNullOrEmpty(playerThreeName))
             {
                 // Player 1's name isn't empty so set it
@@ -679,8 +837,15 @@ namespace GSP
                 GameMaster.Instance.SetPlayerName(2, "Player 3");
             } // end else
 
-            // Player 4
-            string playerFourName = playerFourInput.text.Trim();
+			// Sprite
+			if(GameMaster.Instance.GetPlayerSprite(2) == -1)
+			{
+				GameMaster.Instance.SetPlayerSprite(2, 3);
+			} //end if
+            
+			// Player 4
+            // Name
+			string playerFourName = playerFourInput.text.Trim();
             if (!string.IsNullOrEmpty(playerFourName))
             {
                 // Player 1's name isn't empty so set it
@@ -691,6 +856,12 @@ namespace GSP
                 // Otherwise, Player 4's name is empty so set a default
                 GameMaster.Instance.SetPlayerName(3, "Player 4");
             } // end else
+
+			// Sprite
+			if(GameMaster.Instance.GetPlayerSprite(3) == -1)
+			{
+				GameMaster.Instance.SetPlayerSprite(3, 4);
+			} //end if
 
             // Display loading text
             guideText.text = "Loading, please wait.";
@@ -713,5 +884,19 @@ namespace GSP
             // Finally, set the colour
             GameMaster.Instance.SetPlayerColor(playerNum, (InterfaceColors)playerColor);
         } // end ParseColorButton
+
+		public void SelectCharacter(int pNum)
+		{
+			playerSpriteNum = pNum;
+			DisableColors ();
+			EnableCharacters ();
+			menuState = MenuState.Characters;
+		} //end SelectCharacter
+
+		public void ParseSpriteButton(int spriteNum)
+		{
+			GameMaster.Instance.SetPlayerSprite (playerSpriteNum, spriteNum);
+			guideText.text = "Sprite " + spriteNum + " chosen.";
+		} //end ParseSpriteButton
     } // end BrentsStateMachine
 } //end GSP

@@ -16,7 +16,9 @@ namespace GSP
         Solo,
         Multi,
         Colors,
+		Characters,
         Credits,
+		Options,
         Help,
         Quit
     }; // end MenuState

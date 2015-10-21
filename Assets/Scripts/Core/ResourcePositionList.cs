@@ -23,17 +23,17 @@ namespace GSP.Core
      *******************************************************************************/
     public class ResourcePositionList
     {
-        List<SerializableVector3> positions; // The positions of the resources
+        List<SerializableVector2> positions; // The positions of the resources
 
         // Default constructor; This will create an empty object
         public ResourcePositionList()
         {
             // Initialise the lists
-            positions = new List<SerializableVector3>();
+            positions = new List<SerializableVector2>();
 
             // Reset the container; This prevents the initialisation being in 2 places
             Reset();
-        } // end HighScores
+        } // end ResourcePositionList
 
         // Resets the contents of the container
         public void Reset()
@@ -43,13 +43,13 @@ namespace GSP.Core
         } // end Reset
 
         // Gets the position of a resource at the given index
-        public Vector3 GetPosition(int index)
+        public Vector2 GetPosition(int index)
         {
             return positions[index];
         } // end GetPosition
 
         // Adds the position of a resource to the list
-        public void AddPosition(Vector3 position)
+        public void AddPosition(Vector2 position)
         {
             positions.Add(position);
         } // end AddPosition

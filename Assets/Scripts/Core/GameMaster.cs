@@ -35,7 +35,7 @@ namespace GSP.Core
         string saveFileExt;          // The save file's extension
 
         // The first tile
-        Vector3 startingPos = new Vector3(0.32f, -(GSP.Tiles.TileManager.MaxHeightUnits / 2.0f), -1.6f);
+        Vector3 startingPos = new Vector3(GSP.Tiles.TileUtils.MinWidth, GSP.Tiles.TileUtils.MinHeight, -1.6f);
 
         readonly int maxPlayers = 4; // Max number of players
         int turn;                    // Who's turn it is
@@ -52,6 +52,7 @@ namespace GSP.Core
         // The variables here are through dictionaries; The key is the player number
         Dictionary<int, string> playerNames;            // The list of the players' names
         Dictionary<int, InterfaceColors> playerColors;  // The list of the players' colours
+		Dictionary<int, int> playerSprite;				// The list of the players' sprites
         Dictionary<int, GameObject> playerObjs;         // The list of players' GameObject's
         Dictionary<int, Char.Player> players;           // The list of players' Player scripts references
 
@@ -70,6 +71,7 @@ namespace GSP.Core
             // Create the dictionaries
             playerNames = new Dictionary<int, string>();
             playerColors = new Dictionary<int, InterfaceColors>();
+			playerSprite = new Dictionary<int, int> ();
             playerObjs = new Dictionary<int, GameObject>();
             players = new Dictionary<int, Char.Player>();
 
@@ -92,6 +94,7 @@ namespace GSP.Core
             {
                 playerNames.Add(index, string.Empty);
                 playerColors.Add(index, InterfaceColors.Black);
+				playerSprite.Add(index, -1);
                 playerObjs.Add(index, null);
                 players.Add(index, null);
             } // end for
@@ -187,6 +190,24 @@ namespace GSP.Core
             playerColors[playerNum] = playerColor;
         } // end SetPlayerColor
 
+		// Gets the player's sprite with the given key
+		public int GetPlayerSprite(int playerNum)
+		{
+			return playerSprite [playerNum];
+		} //end GetPlayerSprite
+
+		// Sets the player's sprite with the given key
+		public void SetPlayerSprite(int playerNum, int pSprite)
+		{
+			playerSprite [playerNum] = pSprite;
+		} //end SetPlayerSprite
+
+		// Gets the player's GameObject's animator - not settable outside SetPlayerSprite
+		public Animator GetPlayerAnimator(int playerNum)
+		{
+			return playerObjs [playerNum].GetComponent<Animator> ();
+		} //end GetPlayerAnimator
+
         // Gets the player's GameObject
         public GameObject GetPlayerObject(int playerNum)
         {
@@ -210,7 +231,7 @@ namespace GSP.Core
             int entID = -1;                 // The ID of the created entity
 
             // Get the starting position
-            startPos.y = 0.32f - ((playerNum + 1) * 0.64f);
+            startPos.y = -(playerNum * TileUtils.PlayerMoveDistance);
 
             // Create the player GameObject
             GameObject obj = Instantiate(PrefabReference.prefabPlayer) as GameObject;
@@ -263,6 +284,13 @@ namespace GSP.Core
 
             // Set the colour for the player
             Instance.SetPlayerColor(playerNum, (InterfaceColors)randColor);
+
+			// Get a random sprite
+			int randSprite = die.Roll (1, 8);
+			Debug.Log (randSprite);
+
+			// Set the sprite for the player
+			Instance.SetPlayerSprite (playerNum, randSprite);
         } // end GiveRandomNameAndColor
 
         // Create new players
@@ -517,6 +545,8 @@ namespace GSP.Core
 
         #region Save and Load
 
+        #region Players
+
         // Saves a player with the given key
         public void SavePlayer(int playerNum)
         {
@@ -711,6 +741,10 @@ namespace GSP.Core
             } // end foreach
         } // end LoadPlayers
 
+        #endregion
+
+        #region High Scores
+
         // Save the highscore table
         public void SaveHighScores()
         {
@@ -831,6 +865,10 @@ namespace GSP.Core
             } // end else
         } // end LoadHighScores
 
+        #endregion
+
+        #region Resources
+
         // Save the resource positions
         public void SaveResources()
         {
@@ -858,8 +896,11 @@ namespace GSP.Core
             // Create a new resource positions instance
             ResourcePositionList resourcePostions = new ResourcePositionList();
 
+            // Get a reference to the tile manager
+            TileManager tileManager = GameObject.Find("TileManager").GetComponent<TileManager>();
+
             // Get the resource positions from the TileDictionary
-            List<Vector3> positions = TileDictionary.ResourcePositions;
+            List<Vector2> positions = tileManager.ResourcePositions;
 
             // Loop over the positions
             for (int index = 0; index < positions.Count; index++)
@@ -879,10 +920,13 @@ namespace GSP.Core
         } // end SaveResources
 
         // Load the resource positions
-        public void LoadResources()
+        public List<Vector2> LoadResources()
         {
             // The full resource position's save path
             string resourcesSavePath = resourceFilePath + saveFileExt;
+
+            // Create a new list of vector2
+            List<Vector2> positions = new List<Vector2>();
 
             // Make sure the high score's save file exists before trying to load it
             if (File.Exists(resourcesSavePath))
@@ -899,20 +943,21 @@ namespace GSP.Core
                 // Now close the file stream
                 fileStream.Close();
 
-                // Clear the list in the TileDictionary
-                TileDictionary.ResourcePositions.Clear();
-
                 // Loop over the resource positions and add them to the list
                 for (int index = 0; index < resourcePostions.Count; index++)
                 {
-                    // Get the position
-                    Vector3 pos = resourcePostions.GetPosition(index);
-
-                    // Add the position to the TileDictionary
-                    TileDictionary.ResourcePositions.Add(pos);
+                    // Get and add the position
+                    positions.Add(resourcePostions.GetPosition(index));
                 } // end for
             } // end if
+
+            // Return the positions list
+            return positions;
         } // end LoadResources
+
+        #endregion
+
+        #region Levels
 
         // Loads a level by its index
         public void LoadLevel(int level)
@@ -951,6 +996,8 @@ namespace GSP.Core
             // Then load the level
             Application.LoadLevel(level);
         } // end LoadLevel
+
+        #endregion
 
         #endregion
 

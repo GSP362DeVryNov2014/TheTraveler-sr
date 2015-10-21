@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: fc39e7879e9593b43bd00325874cd1b4
-timeCreated: 1442703929
+timeCreated: 1443571227
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -41,7 +41,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -55,7 +55,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -68,7 +68,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_1
@@ -78,7 +78,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_2
@@ -88,7 +88,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_3
@@ -98,7 +98,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_4
@@ -108,7 +108,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_5
@@ -118,7 +118,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_6
@@ -128,7 +128,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_7
@@ -138,7 +138,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_8
@@ -148,7 +148,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_9
@@ -158,7 +158,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_10
@@ -168,7 +168,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player6_11
@@ -178,7 +178,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 

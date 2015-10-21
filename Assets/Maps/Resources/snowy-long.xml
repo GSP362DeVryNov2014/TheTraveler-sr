@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="37" height="7" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="snowy-long-Tileset" tilewidth="64" tileheight="64">
+  <image source="snowy-long-Tileset.png" width="4096" height="1024"/>
+ </tileset>
+ <tileset firstgid="1025" name="misc" tilewidth="64" tileheight="64">
+  <image source="misc_tiles.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Ground" width="37" height="7">
+  <data encoding="base64">
+   AgEAAJkBAACBAQAAggEAAIMBAACEAQAAhQEAAIYBAACHAQAAiAEAAIkBAACKAQAAiwEAAIwBAACNAQAAjgEAAI8BAACQAQAAkQEAAJIBAACTAQAAlAEAAJUBAACWAQAAlwEAAJgBAACZAQAAgQEAAIIBAACDAQAAhAEAAIUBAACGAQAAhwEAAIgBAACJAQAAigEAAAMBAACaAQAAEAIAAIMAAACKAgAADQMAAA4DAAAPAwAAEAMAABEDAACSAwAAkwMAAJQDAAAHAAAACAAAAAkAAAAKAAAACwAAAAwAAAANAAAADgAAAA8AAAAQAAAAEQAAABIAAAATAAAAmgEAAIIAAACDAAAAigIAAA0DAAAOAwAADwMAABADAAARAwAAkgMAAJMDAAAEAQAADgIAABECAACEAAAAiwIAAIwCAACNAgAAjgIAAI8CAAASAwAAEwMAABQDAACVAwAAlgMAAJcDAACYAwAAmQMAAJoDAACbAwAAnAMAAJ0DAACeAwAAnwMAAKADAAChAwAAogMAAJsBAACQAwAAhAAAAIsCAACMAgAAjQIAAI4CAACPAgAAEgMAABMDAAAUAwAABQEAAJwBAAASAgAAhQAAAIYAAACHAAAAiAAAAIkAAACQAgAAkQIAAJICAAAVAwAAFgMAABcDAAAYAwAAGQMAABoDAAAbAwAAHAMAAB0DAAAeAwAAHwMAACADAAAhAwAAIgMAACMDAACcAQAAEgIAAIUAAACGAAAAhwAAAIgAAACJAAAAkAIAAJECAACSAgAAFQMAAAYBAACdAQAAEwIAABQCAAAVAgAAFgIAABcCAACKAAAAiwAAAIwAAACTAgAAlAIAAJUCAACWAgAAlwIAAJgCAACZAgAAmgIAAJsCAACcAgAAnQIAAJ4CAACfAgAAoAIAAKECAACiAgAAnQEAABMCAAAUAgAAFQIAABYCAAAXAgAAigAAAIsAAACMAAAAkwIAAJQCAAAHAQAAjgMAAJ8BAACgAQAAoQEAAKIBAAAYAgAAGQIAAKUBAACNAAAAjgAAAI8AAACQAAAAkQAAAJIAAACTAAAAlAAAAJUAAACWAAAAlwAAAJgAAACZAAAAmgAAAJsAAACcAAAAnQAAAJ4BAACfAQAAoAEAAKEBAACiAQAAowEAAKQBAAClAQAAjQAAAI4AAACPAAAACAEAAAkBAAAKAQAACwEAAAwBAAANAQAADgEAAA8BAACmAQAAEQEAABIBAAATAQAAFAEAABUBAAAWAQAAFwEAABgBAAAZAQAAGgEAABsBAAAcAQAAHQEAAB4BAAAfAQAAIAEAACEBAAAJAQAACgEAAAsBAAAMAQAADQEAAA4BAAAPAQAAEAEAABEBAAASAQAAEwEAAA==
+  </data>
+ </layer>
+ <layer name="Foreground" width="37" height="7">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  </data>
+ </layer>
+ <objectgroup name="Resources">
+  <object name="Wool01" type="NoCollider" x="1984" y="64" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wool"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wool"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wool02" type="NoCollider" x="896" y="0" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wool"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wool"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wool03" type="NoCollider" x="1600" y="320" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wool"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wool"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wool04" type="NoCollider" x="384" y="64" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wool"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wool"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wood01" type="NoCollider" x="576" y="320" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wood"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wood"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wood02" type="NoCollider" x="960" y="384" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wood"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wood"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wood03" type="NoCollider" x="1280" y="256" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wood"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wood"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Wood04" type="NoCollider" x="1536" y="0" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Wood"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Wood"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Fish01" type="NoCollider" x="256" y="384" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Fish"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Fish"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Fish02" type="NoCollider" x="1216" y="384" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Fish"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Fish"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+  <object name="Fish03" type="NoCollider" x="1920" y="384" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Resources"/>
+    <property name="prefab" value="Resource_Fish"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Fish"/>
+    <property name="tag" value="Resource"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Markets">
+  <object name="Market01" type="NoCollider" x="704" y="192" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Market"/>
+    <property name="prefab" value="Market"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Market"/>
+    <property name="tag" value="Markets"/>
+   </properties>
+  </object>
+  <object name="Market02" type="NoCollider" x="1536" y="192" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Market"/>
+    <property name="prefab" value="Market"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Market"/>
+    <property name="tag" value="Markets"/>
+   </properties>
+  </object>
+  <object name="Market03" type="NoCollider" x="2240" y="0" width="64" height="64">
+   <properties>
+    <property name="layer name" value="Market"/>
+    <property name="prefab" value="Village"/>
+    <property name="prefab add collider" value="false"/>
+    <property name="prefab equals position collider" value="true"/>
+    <property name="prefab z depth" value="0"/>
+    <property name="restype" value="Village"/>
+    <property name="tag" value="Markets"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -21,7 +21,7 @@ namespace GSP.Core
     public class CameraFollow : MonoBehaviour
     {
         float offsetZ;              // The offset on the Z-axis
-        float offsetX;              // The offset on the X-axis
+        public float offsetX;              // The offset on the X-axis
         Vector3 lastTargetPosition; // The last position of the target
         Vector3 currentVelocity;    // The current velocity of the following
         Vector3 lookAheadPos;       // The position to look in front of the target
@@ -38,11 +38,20 @@ namespace GSP.Core
             // Initialise the movement variables
             damping = 0.4f;
             lookAheadFactor = 2.0f;
-            lookAheadReturnSpeed = 1.0f;
+            lookAheadReturnSpeed = 2.5f;
             lookAheadMoveThreshold = 0.1f;
 
-            // Set the X-axis offset
-            offsetX = 1.7f;
+            // Check what map we are on
+            if (Application.loadedLevelName == "area01")
+            {
+                // Set the X-axis offset
+                offsetX = 7.3f;
+            } // end if
+            else
+            {
+                // Otherwise set the X-axis offset of the zoomed camera
+                offsetX = 3.8f;
+            } // end else
 
             // Make sure we are not a child
             transform.parent = null;

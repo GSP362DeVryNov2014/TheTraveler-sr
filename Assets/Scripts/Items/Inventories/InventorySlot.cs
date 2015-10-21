@@ -117,6 +117,7 @@ namespace GSP.Items.Inventories
                     } // end else if
                     else
                     {
+                        Debug.Log("handle equipment");
                         // Otherwise, handle any equipment
                         HandleEquipment(item);
                     } // end else

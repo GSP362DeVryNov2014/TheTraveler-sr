@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 09950ab0f47814e4bb3ec6f707b3b513
-timeCreated: 1442703154
+timeCreated: 1443572734
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,18 @@ TextureImporter:
     21300018: player1_9
     21300020: player1_10
     21300022: player1_11
+    21300024: Player1_0
+    21300026: Player1_1
+    21300028: Player1_2
+    21300030: Player1_3
+    21300032: Player1_4
+    21300034: Player1_5
+    21300036: Player1_6
+    21300038: Player1_7
+    21300040: Player1_8
+    21300042: Player1_9
+    21300044: Player1_10
+    21300046: Player1_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -41,7 +53,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -55,130 +67,130 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: player1_0
+    - name: Player1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 192
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_1
+    - name: Player1_1
       rect:
         serializedVersion: 2
         x: 64
         y: 192
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_2
+    - name: Player1_2
       rect:
         serializedVersion: 2
         x: 128
         y: 192
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_3
+    - name: Player1_3
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_4
+    - name: Player1_4
       rect:
         serializedVersion: 2
         x: 64
         y: 128
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_5
+    - name: Player1_5
       rect:
         serializedVersion: 2
         x: 128
         y: 128
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_6
+    - name: Player1_6
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_7
+    - name: Player1_7
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_8
+    - name: Player1_8
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_9
+    - name: Player1_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_10
+    - name: Player1_10
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: player1_11
+    - name: Player1_11
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 0
+      alignment: 1
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
